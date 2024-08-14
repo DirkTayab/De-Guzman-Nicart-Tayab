@@ -1,0 +1,43 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.homeServices {
+  margin-bottom: 2rem;
+  padding: 12rem 0 0 0;
+  &__wrapper {
+    margin-top: 5rem;
+    @include evengrid(4, 2rem);
+    padding: 5rem 7rem;
+  }
+  &__card {
+    @include centerAll;
+    flex-direction: column;
+    gap: 2.8rem;
+    position: relative;
+    &:hover {
+      span {
+        height: 155%;
+        width: 110%;
+        position: absolute;
+        background-color: $clr--light;
+      }
+    }
+    h3 {
+      border-bottom: 4px solid rgb(255, 255, 255, 0.1);
+      padding-bottom: 2.5rem;
+      width: 100%;
+    }
+    i {
+      font-size: 3rem;
+    }
+  }
+}
+
+.homeServices2 {
+  &__wrapper {
+    padding: 5rem 7rem;
+  }
+  &__slider {
+    display: flex;
+  }
+}

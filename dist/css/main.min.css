@@ -26,11 +26,11 @@
 }
 
 .bg--secondary {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 .text--secondary {
-  color: #fa858a;
+  color: #f8565d;
 }
 
 .text--alignment {
@@ -503,7 +503,7 @@ p {
 
 body {
   color: #fff;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu Condensed", normal;
   font-size: 2rem;
   overflow-x: hidden;
   line-height: 1.4;
@@ -568,7 +568,6 @@ thead,
 tr,
 th,
 td {
-  font-family: "Ubuntu", normal;
   border: 0;
   font-size: 100%;
   margin: 0;
@@ -606,68 +605,42 @@ img {
 
 .container {
   width: 100%;
-  max-width: 100rem;
+  max-width: 98rem;
   margin: 0 auto;
   padding: 0 5rem;
 }
 
-.btn, .btn.inner--light, .btn.bg--footer, .btn.bg--clear, .btn.radius, .btn.bg--secondary {
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: "Ubuntu", normal;
+}
+
+.btn, .btn.bg--secondary {
   padding: 0.8rem 2rem;
-  background: transparent;
-  border: 1px solid transparent;
-  font-size: 1rem;
 }
 .btn.bg--secondary {
-  background-color: #fa858a;
-  border-radius: 2rem;
+  background-color: #f8565d;
   color: #fff;
-  font-weight: 600;
 }
 .btn.bg--secondary:hover {
   background-color: #fff;
-  border: 1px solid #fa858a;
-  color: #fa858a;
-}
-.btn.bg--clear, .btn.radius {
-  background-color: transparent;
-  border-radius: 2rem;
-  color: #fa858a;
-  border: 1px solid #fa858a;
-}
-.btn.bg--clear:hover, .btn.radius:hover {
-  background-color: #fa858a;
-  border: 1px solid #fa858a;
-  color: #fff;
-}
-.btn.radius {
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.btn.bg--footer {
-  padding: 0.2rem 2rem;
-  background-color: #fa858a;
-  border-radius: 2rem;
-  color: #fff;
-  border: 1px solid transparent;
-  font-weight: 600;
-}
-.btn.bg--footer:hover {
-  background-color: #fff;
-  border: 1px solid #fa858a;
-  color: #fa858a;
-}
-.btn.inner--light {
-  background-color: transparent;
-  border-radius: 2rem;
-  color: #fff;
-  border: 1px solid #fa858a;
-}
-.btn.inner--light:hover {
-  background-color: #fa858a;
-  border: 1px solid #fa858a;
-  color: #fff;
+  color: #26252a;
 }
 
 .tns-outer {
@@ -688,7 +661,7 @@ img {
   border: none;
 }
 .tns-nav-active {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 #controls {
@@ -696,7 +669,7 @@ img {
 }
 
 .prev, .next {
-  color: #fa858a;
+  color: #f8565d;
   font-size: 2rem;
   position: relative;
   bottom: 16rem;
@@ -720,6 +693,7 @@ img {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 .header__wrapper {
   display: flex;
@@ -728,19 +702,66 @@ img {
 }
 .header__nav {
   display: flex;
-  padding-right: 10rem;
+  margin-right: 9rem;
   gap: 0.2rem;
 }
 .header__nav li a {
   color: #fff;
-  font-family: "Ubuntu Condensed", normal;
   font-weight: 500;
-  font-size: 1.26rem;
-  padding: 0 0.5rem 4.8rem 0.5rem;
+  font-size: 1.2rem;
+  padding: 0 0.75rem 4.65rem 0.75rem;
+  position: relative;
 }
-.header__nav li a:hover {
-  border-bottom: 7px solid #f8565d;
-  transition: all 0.5s ease;
+.header__nav li a:after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  color: #3e3e43;
+  left: -100;
+}
+
+.homeServices {
+  margin-bottom: 2rem;
+  padding: 12rem 0 0 0;
+}
+.homeServices__wrapper {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 5rem 7rem;
+}
+.homeServices__card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.8rem;
+  position: relative;
+}
+.homeServices__card:hover span {
+  height: 155%;
+  width: 110%;
+  position: absolute;
+  background-color: #fff;
+}
+.homeServices__card h3 {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+.homeServices__card i {
+  font-size: 3rem;
+}
+
+.homeServices2__wrapper {
+  padding: 5rem 7rem;
+}
+.homeServices2__slider {
+  display: flex;
 }
 
 .aboutBanner {
@@ -749,5 +770,5 @@ img {
 }
 .aboutBanner__title h2 {
   font-size: 5rem;
-  color: #fa858a;
+  color: #f8565d;
 }/*# sourceMappingURL=main.min.css.map */
