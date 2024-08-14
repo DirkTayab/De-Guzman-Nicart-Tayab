@@ -1,5 +1,5 @@
 var slider = tns({
-  container: ".testimonial__slider",
+  container: ".Services__slider",
   items: 3,
     speed: 200,
     gutter: 100,
