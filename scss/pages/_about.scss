@@ -2,27 +2,131 @@
 @use "../base/" as *;
 
 .aboutBanner {
-  background-color: $clr--dark;
-  padding: 5rem;
+  // background-color: $clr--dark;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
   &__title {
+    &::after {
+      display: inline-block;
+      position: relative;
+      content: " ";
+      width: 65rem;
+      height: 1px;
+      background-color: #89888c;
+    }
     h2 {
-      font-size: 2rem;
+      font-size: 40px;
       font-family: $font-primary;
       font-weight: 200;
     }
   }
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     background-color: $clr--primary;
     padding: 5rem;
-    gap: 5rem;
-    p{
+    gap: 3rem;
+    h3 {
+      font-size: 22px;
+      font-family: $font-secondary;
+      font-weight: 200;
+    }
+    p {
+      padding-top: 1rem;
       padding-bottom: 2rem;
+      font-size: 14px;
+    }
+    a {
+      font-family: $font-secondary;
+      font-weight: 200;
     }
   }
-  &__content{
+  &__content {
     @include centerAll;
-    @include evengrid(4, 5rem);
+    @include evengrid(4, 2rem);
+  }
+}
+
+.aboutHistory {
+  padding-bottom: 2rem;
+  // background-color: $clr--dark;
+  &__wrapper {
+    padding: 5rem;
+    background-color: $clr--secondary;
+    @include unevengrid(2fr 1fr, 2rem);
+    p {
+      font-size: 14px;
+      padding-bottom: 1rem;
+    }
+    a {
+      font-size: 14px;
+      color: #fca8ac;
+    }
+  }
+  &__history {
+    h2 {
+      font-family: $font-secondary;
+      &::after {
+        display: inline-block;
+        position: relative;
+        content: " ";
+        width: 49rem;
+        top: -1rem;
+        height: 0.1rem;
+        background-color: #89888c;
+      }
+    }
+  }
+  &__opportunities {
+    h2 {
+      font-family: $font-secondary;
+      &::after {
+        display: inline-block;
+        position: relative;
+        content: " ";
+        width: 23rem;
+        top: -1rem;
+        height: 0.1rem;
+        background-color: #89888c;
+      }
+    }
+  }
+}
+
+.aboutTeam {
+  padding-bottom: 2rem;
+  // background-color: $clr--dark;
+  span {
+    color: $clr--secondary;
+    font-size: 13px;
+  }
+  p {
+    color: $clr--dark;
+
+    a {
+      color: $clr--dark;
+    }
+  }
+  &__wrapper {
+    background-color: $clr--light;
+    padding: 5rem;
+  }
+  &__content {
+    @include evengrid(4, 2rem);
+  }
+  &__title {
+    h2 {
+      font-family: $font-secondary;
+      color: $clr--dark;
+      &::after {
+        display: inline-block;
+        position: relative;
+        content: " ";
+        width: 75.15rem;
+        top: -1.5rem;
+        height: 1px;
+        background-color: #89888c;
+      }
+    }
   }
 }

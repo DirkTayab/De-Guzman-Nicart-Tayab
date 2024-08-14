@@ -469,16 +469,6 @@ html {
   font-size: 62.5%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  margin-bottom: 2rem;
-}
-
 h1 {
   font-size: clamp(5rem, 5vw, 9rem);
 }
@@ -503,7 +493,7 @@ p {
 
 body {
   color: #fff;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-size: 2rem;
   overflow-x: hidden;
   line-height: 1.4;
@@ -568,7 +558,6 @@ thead,
 tr,
 th,
 td {
-  font-family: "Ubuntu", normal;
   border: 0;
   font-size: 100%;
   margin: 0;
@@ -606,9 +595,25 @@ img {
 
 .container {
   width: 100%;
-  max-width: 100rem;
+  max-width: 98rem;
   margin: 0 auto;
   padding: 0 5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .btn, .btn.bg--secondary {
@@ -691,7 +696,7 @@ img {
 }
 .header__nav li a {
   color: #fff;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 500;
   font-size: 1.26rem;
   padding: 0 0.5rem 4.8rem 0.5rem;
@@ -701,13 +706,53 @@ img {
   transition: all 0.5s ease;
 }
 
+.footer {
+  padding: 2rem 0;
+}
+.footer p {
+  color: #89888c;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 13px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__social {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer__social i {
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .aboutBanner {
-  background-color: #26252a;
-  padding: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.aboutBanner__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 65rem;
+  height: 1px;
+  background-color: #89888c;
 }
 .aboutBanner__title h2 {
-  font-size: 2rem;
-  font-family: "Ubuntu", normal;
+  font-size: 40px;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__wrapper {
@@ -715,10 +760,21 @@ img {
   flex-direction: column;
   background-color: #3e3e43;
   padding: 5rem;
-  gap: 5rem;
+  gap: 3rem;
+}
+.aboutBanner__wrapper h3 {
+  font-size: 22px;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-weight: 200;
 }
 .aboutBanner__wrapper p {
+  padding-top: 1rem;
   padding-bottom: 2rem;
+  font-size: 14px;
+}
+.aboutBanner__wrapper a {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-weight: 200;
 }
 .aboutBanner__content {
   display: flex;
@@ -727,5 +783,84 @@ img {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  gap: 2rem;
+}
+
+.aboutHistory {
+  padding-bottom: 2rem;
+}
+.aboutHistory__wrapper {
+  padding: 5rem;
+  background-color: #f8565d;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.aboutHistory__wrapper p {
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+.aboutHistory__wrapper a {
+  font-size: 14px;
+  color: #fca8ac;
+}
+.aboutHistory__history h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+}
+.aboutHistory__history h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 49rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+.aboutHistory__opportunities h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+}
+.aboutHistory__opportunities h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+
+.aboutTeam {
+  padding-bottom: 2rem;
+}
+.aboutTeam span {
+  color: #f8565d;
+  font-size: 13px;
+}
+.aboutTeam p {
+  color: #26252a;
+}
+.aboutTeam p a {
+  color: #26252a;
+}
+.aboutTeam__wrapper {
+  background-color: #fff;
+  padding: 5rem;
+}
+.aboutTeam__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.aboutTeam__title h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  color: #26252a;
+}
+.aboutTeam__title h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75.15rem;
+  top: -1.5rem;
+  height: 1px;
+  background-color: #89888c;
 }/*# sourceMappingURL=main.min.css.map */
