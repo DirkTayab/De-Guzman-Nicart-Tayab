@@ -33,6 +33,14 @@
   color: #f8565d;
 }
 
+.bg--footer {
+  background-color: #89888c;
+}
+
+.text--footer {
+  color: #89888c;
+}
+
 .text--alignment {
   text-align: alignments;
 }
@@ -469,16 +477,6 @@ html {
   font-size: 62.5%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  margin-bottom: 2rem;
-}
-
 h1 {
   font-size: clamp(5rem, 5vw, 9rem);
 }
@@ -503,7 +501,7 @@ p {
 
 body {
   color: #fff;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-size: 2rem;
   overflow-x: hidden;
   line-height: 1.4;
@@ -626,16 +624,25 @@ p {
   font-size: 14px;
 }
 
-.btn, .btn.bg--secondary {
+.btn, .btnbg--slider, .bg--secondary.btnbg--slider, .btn.bg--secondary {
   padding: 0.8rem 2rem;
 }
-.btn.bg--secondary {
+.btn.bg--secondary, .bg--secondary.btnbg--slider {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover {
+.btn.bg--secondary:hover, .bg--secondary.btnbg--slider:hover {
   background-color: #fff;
   color: #26252a;
+}
+.btnbg--slider {
+  background-color: #fff;
+  color: #f8565d;
+}
+.btnbg--slider:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
 
 .tns-outer {
@@ -646,6 +653,7 @@ p {
 }
 
 .tns-nav {
+  display: none;
   text-align: center;
 }
 .tns-nav button {
@@ -665,20 +673,26 @@ p {
 
 .prev, .next {
   color: #f8565d;
-  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid transparent;
+  font-size: 1rem;
   position: relative;
-  bottom: 16rem;
-  left: 6rem;
+  bottom: 36.5rem;
+  left: 75.5rem;
+  padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
   .prev, .next {
     display: none;
   }
 }
-
-.next {
-  left: 80rem;
+.prev:hover, .next:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
+
 @media screen and (max-width: 520px) {
   .next {
     display: none;
@@ -688,6 +702,7 @@ p {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 .header__wrapper {
   display: flex;
@@ -701,7 +716,7 @@ p {
 }
 .header__nav li a {
   color: #fff;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 500;
   font-size: 1.26rem;
   padding: 0 0.5rem 4.8rem 0.5rem;
@@ -712,39 +727,35 @@ p {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
+}
+.footer p {
+  color: #89888c;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 13px;
 }
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-}
-.footer__wrapper p {
-  color: #89888c;
-  font-family: "Ubuntu", normal;
-  font-size: 13px;
-}
-.footer__wrapper iframe {
-  width: 45rem;
-  height: 20rem;
-}
-.footer__socials {
-  padding-left: 5rem;
+  gap: 2rem;
 }
 .footer__social {
+  padding: 1rem 0;
   display: flex;
+  flex-direction: row;
   gap: 0.5rem;
-  padding-top: 3rem;
-  padding-left: 1rem;
 }
 .footer__social i {
+  padding: 0.8rem;
   color: #fff;
+  font-size: 1.2rem;
   border: 2px solid #fff;
-  padding: 1rem;
   border-radius: 50%;
 }
-.footer__location1 {
-  margin-bottom: 1rem;
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .aboutBanner {
@@ -761,7 +772,7 @@ p {
 }
 .aboutBanner__title h2 {
   font-size: 40px;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__wrapper {
@@ -773,7 +784,7 @@ p {
 }
 .aboutBanner__wrapper h3 {
   font-size: 22px;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__wrapper p {
@@ -782,7 +793,7 @@ p {
   font-size: 14px;
 }
 .aboutBanner__wrapper a {
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__content {
@@ -814,7 +825,7 @@ p {
   color: #fca8ac;
 }
 .aboutHistory__history h2 {
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
 }
 .aboutHistory__history h2::after {
   display: inline-block;
@@ -826,7 +837,7 @@ p {
   background-color: #89888c;
 }
 .aboutHistory__opportunities h2 {
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
 }
 .aboutHistory__opportunities h2::after {
   display: inline-block;
@@ -861,7 +872,7 @@ p {
   gap: 2rem;
 }
 .aboutTeam__title h2 {
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   color: #26252a;
 }
 .aboutTeam__title h2::after {
@@ -872,6 +883,51 @@ p {
   top: -1.5rem;
   height: 1px;
   background-color: #89888c;
+}
+
+.Services {
+  padding-top: 9.42rem;
+  padding-bottom: 2rem;
+}
+.Services__wrapper {
+  background-color: #3e3e43;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.Services__slider {
+  display: flex;
+  padding-top: 1rem;
+}
+.Services__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75rem;
+  top: -0.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+
+.Price {
+  padding-bottom: 2rem;
+}
+.Price h2 {
+  font-weight: 200;
+  color: #26252a;
+}
+.Price a {
+  font-size: 13px;
+  color: #f8565d;
+}
+.Price p {
+  color: #26252a;
+}
+.Price__wrapper {
+  padding: 5rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
 }
 
 .blog {
@@ -897,7 +953,7 @@ p {
   margin-bottom: 1rem;
 }
 .blog__details p {
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
   width: 90%;
   margin-bottom: 2.5rem;
 }
@@ -936,7 +992,7 @@ p {
 .contact p {
   padding-top: 1rem;
   color: #26252a;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-size: p;
 }
 .contact__a {
@@ -946,7 +1002,7 @@ p {
 }
 .contact__a a {
   color: #f8565d;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
   font-size: 14px;
 }
 .contact__a a:hover {
@@ -987,7 +1043,7 @@ p {
   color: #89888c;
 }
 .contact__input textarea {
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
   padding: 0.7rem;
   margin-bottom: 5rem;
   border: 1px solid #89888c;
@@ -995,11 +1051,11 @@ p {
 }
 .contact__input textarea::-moz-placeholder {
   color: #26252a;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
 }
 .contact__input textarea::placeholder {
   color: #26252a;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
 }
 .contact__input textarea:focus {
   border: none;

@@ -12,4 +12,14 @@
       color: $clr--dark;
     }
   }
+  &bg--slider{
+    @extend .btn;
+    background-color: $clr--light;
+    color: $clr--secondary;
+    &:hover{
+      background-color: $clr--secondary;
+      color: $clr--light;
+      border: 1px solid $clr--secondary;
+    }
+  }
 }

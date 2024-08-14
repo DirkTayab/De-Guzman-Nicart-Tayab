@@ -1,0 +1,49 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.Services {
+  padding-top: 9.42rem;
+  padding-bottom: 2rem;
+  &__wrapper {
+    background-color: $clr--primary;
+    margin: 0 auto;
+    padding: 5rem;
+  }
+
+  &__slider {
+    display: flex;
+
+    padding-top: 1rem;
+  }
+  &__title {
+    &::after {
+      display: inline-block;
+      position: relative;
+      content: " ";
+      width: 75rem;
+      top: -0.5rem;
+      height: 1px;
+      background-color: #89888c;
+    }
+  }
+}
+
+.Price {
+  padding-bottom: 2rem;
+  h2 {
+    font-weight: 200;
+    color: $clr--dark;
+  }
+  a {
+    font-size: 13px;
+    color: $clr--secondary;
+  }
+  p {
+    color: $clr--dark;
+  }
+  &__wrapper {
+    padding: 5rem;
+    background-color: $clr--light;
+    @include unevengrid(1fr 2fr, 2rem);
+  }
+}
