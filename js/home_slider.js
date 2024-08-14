@@ -1,7 +1,7 @@
 var slider = tns({
   container: ".homeServices2__slider",
   items: 3,
-    speed: 200,
+    speed: 500,
     gutter: 100,
     slideBy: "1",
     autoplay: true,

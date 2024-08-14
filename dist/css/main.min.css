@@ -27,9 +27,19 @@
 
 .bg--secondary {
   background-color: #f8565d;
+  background-color: #f8565d;
 }
 
 .text--secondary {
+  color: #f8565d;
+}
+
+.bg--footer {
+  background-color: #89888c;
+}
+
+.text--footer {
+  color: #89888c;
   color: #f8565d;
 }
 
@@ -469,16 +479,6 @@ html {
   font-size: 62.5%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  margin-bottom: 2rem;
-}
-
 h1 {
   font-size: clamp(5rem, 5vw, 9rem);
 }
@@ -503,7 +503,7 @@ p {
 
 body {
   color: #fff;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-size: 2rem;
   overflow-x: hidden;
   line-height: 1.4;
@@ -635,12 +635,27 @@ p {
   padding: 0.8rem 2rem;
 }
 .btn.bg--secondary {
+}
+
+.btn, .btnbg--slider, .bg--secondary.btnbg--slider, .btn.bg--secondary {
+  padding: 0.8rem 2rem;
+}
+.btn.bg--secondary, .bg--secondary.btnbg--slider {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover {
+.btn.bg--secondary:hover, .bg--secondary.btnbg--slider:hover {
   background-color: #fff;
   color: #26252a;
+}
+.btnbg--slider {
+  background-color: #fff;
+  color: #f8565d;
+}
+.btnbg--slider:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
 
 .tns-outer {
@@ -651,6 +666,7 @@ p {
 }
 
 .tns-nav {
+  display: none;
   text-align: center;
 }
 .tns-nav button {
@@ -670,20 +686,26 @@ p {
 
 .prev, .next {
   color: #f8565d;
-  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid transparent;
+  font-size: 1rem;
   position: relative;
-  bottom: 16rem;
-  left: 6rem;
+  bottom: 36.5rem;
+  left: 75.5rem;
+  padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
   .prev, .next {
     display: none;
   }
 }
-
-.next {
-  left: 80rem;
+.prev:hover, .next:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
+
 @media screen and (max-width: 520px) {
   .next {
     display: none;
@@ -707,6 +729,7 @@ p {
 }
 .header__nav li a {
   color: #fff;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0 0.75rem 4.65rem 0.75rem;
@@ -764,11 +787,349 @@ p {
   display: flex;
 }
 
+.footer {
+  padding: 2rem 0;
+}
+.footer p {
+  color: #89888c;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 13px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__social {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer__social i {
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .aboutBanner {
-  background-color: #3e3e43;
-  padding: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.aboutBanner__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 65rem;
+  height: 1px;
+  background-color: #89888c;
 }
 .aboutBanner__title h2 {
   font-size: 5rem;
   color: #f8565d;
+  font-size: 40px;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 200;
+}
+.aboutBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #3e3e43;
+  padding: 5rem;
+  gap: 3rem;
+}
+.aboutBanner__wrapper h3 {
+  font-size: 22px;
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-weight: 200;
+}
+.aboutBanner__wrapper p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 14px;
+}
+.aboutBanner__wrapper a {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-weight: 200;
+}
+.aboutBanner__content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.aboutHistory {
+  padding-bottom: 2rem;
+}
+.aboutHistory__wrapper {
+  padding: 5rem;
+  background-color: #f8565d;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.aboutHistory__wrapper p {
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+.aboutHistory__wrapper a {
+  font-size: 14px;
+  color: #fca8ac;
+}
+.aboutHistory__history h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+}
+.aboutHistory__history h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 49rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+.aboutHistory__opportunities h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+}
+.aboutHistory__opportunities h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+
+.aboutTeam {
+  padding-bottom: 2rem;
+}
+.aboutTeam span {
+  color: #f8565d;
+  font-size: 13px;
+}
+.aboutTeam p {
+  color: #26252a;
+}
+.aboutTeam p a {
+  color: #26252a;
+}
+.aboutTeam__wrapper {
+  background-color: #fff;
+  padding: 5rem;
+}
+.aboutTeam__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.aboutTeam__title h2 {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  color: #26252a;
+}
+.aboutTeam__title h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75.15rem;
+  top: -1.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+
+.Services {
+  padding-top: 9.42rem;
+  padding-bottom: 2rem;
+}
+.Services__wrapper {
+  background-color: #3e3e43;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.Services__slider {
+  display: flex;
+  padding-top: 1rem;
+}
+.Services__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75rem;
+  top: -0.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+
+.Price {
+  padding-bottom: 2rem;
+}
+.Price h2 {
+  font-weight: 200;
+  color: #26252a;
+}
+.Price a {
+  font-size: 13px;
+  color: #f8565d;
+}
+.Price p {
+  color: #26252a;
+}
+.Price__wrapper {
+  padding: 5rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.blog {
+  padding-top: 10rem;
+}
+.blog__wrapper {
+  padding: 7rem;
+  background: #343438;
+}
+.blog__card {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #89888c;
+}
+.blog__card h3 {
+  font-size: 40px;
+  font-weight: normal;
+}
+.blog__details h4 {
+  font-size: h3;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.blog__details p {
+  font-family: "Ubuntu", Arial, sans-serif;
+  width: 90%;
+  margin-bottom: 2.5rem;
+}
+.blog__details a {
+  font-weight: normal;
+}
+.blog__title h3 {
+  font-size: 40px;
+  padding-bottom: 1rem;
+  font-weight: normal;
+  border-bottom: 1px solid #89888c;
+}
+.blog__date {
+  padding-left: 1rem;
+}
+.blog__date span {
+  font-size: 83px;
+}
+
+.contact {
+  padding-top: 10rem;
+}
+.contact__wrapper {
+  padding: 8rem;
+  display: flex;
+  gap: 5rem;
+}
+.contact__find {
+  width: 40%;
+}
+.contact__find h2 {
+  color: #26252a;
+  border-bottom: 1px solid #89888c;
+  font-weight: normal;
+}
+.contact p {
+  padding-top: 1rem;
+  color: #26252a;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: p;
+}
+.contact__a {
+  border-bottom: 1px solid #89888c;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.contact__a a {
+  color: #f8565d;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 14px;
+}
+.contact__a a:hover {
+  color: #26252a;
+}
+.contact__form h2 {
+  font-size: h2;
+  color: #26252a;
+  font-weight: normal;
+  border-bottom: 1px solid #89888c;
+  padding-right: 23.4rem;
+}
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+.contact__input input {
+  border: 1px solid #89888c;
+  width: 75%;
+  padding: 0.7rem;
+}
+.contact__input input::-moz-placeholder {
+  color: #26252a;
+}
+.contact__input input::placeholder {
+  color: #26252a;
+}
+.contact__input input:focus {
+  border: none;
+  box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+}
+.contact__input input:focus::-moz-placeholder {
+  color: #89888c;
+}
+.contact__input input:focus::placeholder {
+  color: #89888c;
+}
+.contact__input textarea {
+  font-family: "Ubuntu", Arial, sans-serif;
+  padding: 0.7rem;
+  margin-bottom: 5rem;
+  border: 1px solid #89888c;
+  height: 20rem;
+}
+.contact__input textarea::-moz-placeholder {
+  color: #26252a;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+.contact__input textarea::placeholder {
+  color: #26252a;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+.contact__input textarea:focus {
+  border: none;
+  box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+}
+.contact__input textarea:focus::-moz-placeholder {
+  color: #89888c;
+}
+.contact__input textarea:focus::placeholder {
+  color: #89888c;
+}
+.contact__button {
+  text-align: right;
 }/*# sourceMappingURL=main.min.css.map */

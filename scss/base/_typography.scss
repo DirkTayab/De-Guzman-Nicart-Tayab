@@ -4,44 +4,36 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(//fonts.googleapis.com/css?family=Raleway:400,300);
 
-$font-primary: "Ubuntu", normal;
-$font-secondary: "Ubuntu Condensed", normal;
-$font-tertiary: "Raleway", normal;
-
+$font-primary: "Ubuntu", Arial, sans-serif;
+$font-secondary: "Ubuntu Condensed", Arial, sans-serif;
+$font-tertiary: "Raleway", Arial, sans-serif;
 
 html {
   font-size: 62.5%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $clr--light;
-  margin-bottom: 2rem;
+h1 {
 }
 
-h1{
-    // Min - Resolution - Max
-    font-size: clamp(5rem, 5vw, 9rem);
+h1 {
+  // Min - Resolution - Max
+  font-size: clamp(5rem, 5vw, 9rem);
 }
-h2{
-    // Min - Resolution - Max
-    font-size: clamp(4rem, 5vw, 6rem);
+h2 {
+  // Min - Resolution - Max
+  font-size: clamp(4rem, 5vw, 6rem);
 }
-h3{
-    // Min - Resolution - Max
-    font-size: clamp(2rem, 5vw, 4rem);
+h3 {
+  // Min - Resolution - Max
+  font-size: clamp(2rem, 5vw, 4rem);
 }
-h4{
-    // Min - Resolution - Max
-    font-size: clamp(1.5rem, 5vw, 2rem);
+h4 {
+  // Min - Resolution - Max
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 p {
   color: $clr--light;
   // Min - Resolution - Max
- font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 2rem;
 }

@@ -1,0 +1,89 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contact {
+  padding-top: 10rem;
+  &__wrapper {
+    padding: 8rem;
+    display: flex;
+    gap: 5rem;
+  }
+  &__find {
+    h2 {
+      color: $clr--dark;
+      border-bottom: 1px solid $clr--footer;
+      font-weight: normal;
+    }
+    width: 40%;
+  }
+  p {
+    padding-top: 1rem;
+    color: $clr--dark;
+    font-family: $font-primary;
+    font-size: p;
+  }
+  &__a {
+    border-bottom: 1px solid $clr--footer;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    a {
+      color: $clr--secondary;
+      font-family: $font-primary;
+      font-size: 14px;
+      &:hover {
+        color: $clr--dark;
+      }
+    }
+  }
+  &__form {
+    h2 {
+      font-size: h2;
+      color: $clr--dark;
+      font-weight: normal;
+      border-bottom: 1px solid $clr--footer;
+      padding-right: 23.4rem;
+    }
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+    input {
+      border: 1px solid $clr--footer;
+      width: 75%;
+      padding: 0.7rem;
+      &::placeholder {
+        color: $clr--dark;
+      }
+      &:focus{
+       border: none;
+       box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+       &::placeholder{
+        color: $clr--footer;
+       }
+      }
+    }
+    textarea {
+      font-family: $font-primary;
+      padding: 0.7rem;
+      margin-bottom: 5rem;
+      border: 1px solid $clr--footer;
+      height: 20rem;
+      &::placeholder {
+        color: $clr--dark;
+        font-family: $font-primary;
+      }
+      &:focus{
+       border: none;
+       box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+       &::placeholder{
+        color: $clr--footer;
+       }
+      }
+    }
+  }
+  &__button {
+    text-align: right;
+  }
+}
