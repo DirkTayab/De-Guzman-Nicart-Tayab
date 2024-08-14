@@ -610,7 +610,7 @@ img {
   padding: 0 5rem;
 }
 
-.btn, .btn.inner--light, .btn.bg--footer, .btn.bg--clear, .btn.radius, .btn.bg--secondary {
+.btn, .btn.bg--secondary {
   padding: 0.8rem 2rem;
   background: transparent;
   border: 1px solid transparent;
@@ -618,7 +618,6 @@ img {
 }
 .btn.bg--secondary {
   background-color: #fa858a;
-  border-radius: 2rem;
   color: #fff;
   font-weight: 600;
 }
@@ -626,47 +625,6 @@ img {
   background-color: #fff;
   border: 1px solid #fa858a;
   color: #fa858a;
-}
-.btn.bg--clear, .btn.radius {
-  background-color: transparent;
-  border-radius: 2rem;
-  color: #fa858a;
-  border: 1px solid #fa858a;
-}
-.btn.bg--clear:hover, .btn.radius:hover {
-  background-color: #fa858a;
-  border: 1px solid #fa858a;
-  color: #fff;
-}
-.btn.radius {
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.btn.bg--footer {
-  padding: 0.2rem 2rem;
-  background-color: #fa858a;
-  border-radius: 2rem;
-  color: #fff;
-  border: 1px solid transparent;
-  font-weight: 600;
-}
-.btn.bg--footer:hover {
-  background-color: #fff;
-  border: 1px solid #fa858a;
-  color: #fa858a;
-}
-.btn.inner--light {
-  background-color: transparent;
-  border-radius: 2rem;
-  color: #fff;
-  border: 1px solid #fa858a;
-}
-.btn.inner--light:hover {
-  background-color: #fa858a;
-  border: 1px solid #fa858a;
-  color: #fff;
 }
 
 .tns-outer {
@@ -716,15 +674,6 @@ img {
   }
 }
 
-<<<<<<< HEAD
-.aboutBanner {
-  background-color: #3e3e43;
-  padding: 5rem;
-}
-.aboutBanner__title h2 {
-  font-size: 5rem;
-  color: #fa858a;
-=======
 .footer {
   padding: 2rem 0;
 }
@@ -755,5 +704,28 @@ img {
   display: flex;
   flex-direction: column;
   gap: 3rem;
->>>>>>> 4059a79f3e19607b317a0dbe6143657022b8f9da
+}
+
+.aboutBanner {
+  background-color: #26252a;
+  padding: 5rem;
+}
+.aboutBanner__title h2 {
+  font-size: 2rem;
+  font-family: "Ubuntu", normal;
+  font-weight: 200;
+}
+.aboutBanner__wrapper {
+  background-color: #3e3e43;
+  padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.aboutBanner__wrapper p {
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=main.min.css.map */
