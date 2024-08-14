@@ -628,19 +628,14 @@ p {
 
 .btn, .btn.bg--secondary {
   padding: 0.8rem 2rem;
-  background: transparent;
-  border: 1px solid transparent;
-  font-size: 1rem;
 }
 .btn.bg--secondary {
   background-color: #f8565d;
   color: #fff;
-  font-weight: 600;
 }
 .btn.bg--secondary:hover {
   background-color: #fff;
-  border: 1px solid #f8565d;
-  color: #f8565d;
+  color: #26252a;
 }
 
 .tns-outer {
@@ -753,27 +748,130 @@ p {
 }
 
 .aboutBanner {
-  background-color: #26252a;
-  padding: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+.aboutBanner__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 65rem;
+  height: 1px;
+  background-color: #89888c;
 }
 .aboutBanner__title h2 {
-  font-size: 2rem;
+  font-size: 40px;
   font-family: "Ubuntu", normal;
   font-weight: 200;
 }
 .aboutBanner__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #3e3e43;
-  padding-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  padding: 5rem;
+  gap: 3rem;
+}
+.aboutBanner__wrapper h3 {
+  font-size: 22px;
+  font-family: "Ubuntu Condensed", normal;
+  font-weight: 200;
+}
+.aboutBanner__wrapper p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 14px;
+}
+.aboutBanner__wrapper a {
+  font-family: "Ubuntu Condensed", normal;
+  font-weight: 200;
+}
+.aboutBanner__content {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
-.aboutBanner__wrapper p {
+
+.aboutHistory {
   padding-bottom: 2rem;
+}
+.aboutHistory__wrapper {
+  padding: 5rem;
+  background-color: #f8565d;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.aboutHistory__wrapper p {
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+.aboutHistory__wrapper a {
+  font-size: 14px;
+  color: #fca8ac;
+}
+.aboutHistory__history h2 {
+  font-family: "Ubuntu Condensed", normal;
+}
+.aboutHistory__history h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 49rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+.aboutHistory__opportunities h2 {
+  font-family: "Ubuntu Condensed", normal;
+}
+.aboutHistory__opportunities h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -1rem;
+  height: 0.1rem;
+  background-color: #89888c;
+}
+
+.aboutTeam {
+  padding-bottom: 2rem;
+}
+.aboutTeam span {
+  color: #f8565d;
+  font-size: 13px;
+}
+.aboutTeam p {
+  color: #26252a;
+}
+.aboutTeam p a {
+  color: #26252a;
+}
+.aboutTeam__wrapper {
+  background-color: #fff;
+  padding: 5rem;
+}
+.aboutTeam__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.aboutTeam__title h2 {
+  font-family: "Ubuntu Condensed", normal;
+  color: #26252a;
+}
+.aboutTeam__title h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75.15rem;
+  top: -1.5rem;
+  height: 1px;
+  background-color: #89888c;
 }
 
 .blog {
@@ -803,6 +901,9 @@ p {
   width: 90%;
   margin-bottom: 2.5rem;
 }
+.blog__details a {
+  font-weight: normal;
+}
 .blog__title h3 {
   font-size: 40px;
   padding-bottom: 1rem;
@@ -814,4 +915,34 @@ p {
 }
 .blog__date span {
   font-size: 83px;
+}
+
+.contact {
+  padding-top: 15rem;
+}
+.contact__wrapper {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__find {
+  width: 45%;
+}
+.contact__find h2 {
+  color: #26252a;
+  border-bottom: 1px solid #89888c;
+}
+.contact__find a {
+  color: #f8565d;
+}
+.contact__find p {
+  color: #26252a;
+  font-family: "Ubuntu Condensed", normal;
+}
+.contact__a {
+  border-bottom: 1px solid #89888c;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.min.css.map */

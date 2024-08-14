@@ -1,0 +1,30 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contact {
+  padding-top: 15rem;
+  &__wrapper {
+    padding: 5rem;
+    @include between;
+    gap: 2rem;
+  }
+  &__find {
+    h2 {
+      color: $clr--dark;
+      border-bottom: 1px solid $clr--footer;
+    }
+    width: 45%;
+    a {
+      color: $clr--secondary;
+    }
+    p {
+      color: $clr--dark;
+      font-family: $font-secondary;
+    }
+  }
+  &__a{
+    border-bottom: 1px solid $clr--footer;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
