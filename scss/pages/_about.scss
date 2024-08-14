@@ -1,0 +1,23 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutBanner {
+  background-color: $clr--dark;
+  padding: 5rem;
+  &__title {
+    h2 {
+      font-size: 2rem;
+      font-family: $font-primary;
+      font-weight: 200;
+    }
+  }
+  &__wrapper{
+    background-color: $clr--primary;
+    padding-top: 2.5rem;
+    @include evengrid(4,5rem);
+    @include centerAll;
+    p{
+      padding-bottom: 2rem;
+    }
+  }
+}
