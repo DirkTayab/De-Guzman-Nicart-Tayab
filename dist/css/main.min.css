@@ -918,31 +918,99 @@ p {
 }
 
 .contact {
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 .contact__wrapper {
-  padding: 5rem;
+  padding: 8rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 .contact__find {
-  width: 45%;
+  width: 40%;
 }
 .contact__find h2 {
   color: #26252a;
   border-bottom: 1px solid #89888c;
+  font-weight: normal;
 }
-.contact__find a {
-  color: #f8565d;
-}
-.contact__find p {
+.contact p {
+  padding-top: 1rem;
   color: #26252a;
-  font-family: "Ubuntu Condensed", normal;
+  font-family: "Ubuntu", normal;
+  font-size: p;
 }
 .contact__a {
   border-bottom: 1px solid #89888c;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   padding-bottom: 1rem;
+}
+.contact__a a {
+  color: #f8565d;
+  font-family: "Ubuntu", normal;
+  font-size: 14px;
+}
+.contact__a a:hover {
+  color: #26252a;
+}
+.contact__form h2 {
+  font-size: h2;
+  color: #26252a;
+  font-weight: normal;
+  border-bottom: 1px solid #89888c;
+  padding-right: 23.4rem;
+}
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+.contact__input input {
+  border: 1px solid #89888c;
+  width: 75%;
+  padding: 0.7rem;
+}
+.contact__input input::-moz-placeholder {
+  color: #26252a;
+}
+.contact__input input::placeholder {
+  color: #26252a;
+}
+.contact__input input:focus {
+  border: none;
+  box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+}
+.contact__input input:focus::-moz-placeholder {
+  color: #89888c;
+}
+.contact__input input:focus::placeholder {
+  color: #89888c;
+}
+.contact__input textarea {
+  font-family: "Ubuntu", normal;
+  padding: 0.7rem;
+  margin-bottom: 5rem;
+  border: 1px solid #89888c;
+  height: 20rem;
+}
+.contact__input textarea::-moz-placeholder {
+  color: #26252a;
+  font-family: "Ubuntu", normal;
+}
+.contact__input textarea::placeholder {
+  color: #26252a;
+  font-family: "Ubuntu", normal;
+}
+.contact__input textarea:focus {
+  border: none;
+  box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+}
+.contact__input textarea:focus::-moz-placeholder {
+  color: #89888c;
+}
+.contact__input textarea:focus::placeholder {
+  color: #89888c;
+}
+.contact__button {
+  text-align: right;
 }/*# sourceMappingURL=main.min.css.map */
