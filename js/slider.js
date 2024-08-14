@@ -1,9 +1,9 @@
 var slider = tns({
   container: ".Services__slider",
   items: 3,
-    speed: 200,
+    speed: 500,
     gutter: 100,
-    slideBy: "page",
+    slideBy: "1",
     autoplay: true,
     navPosition: "bottom",
     containerControls: "#controls",

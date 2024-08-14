@@ -33,6 +33,14 @@
   color: #f8565d;
 }
 
+.bg--footer {
+  background-color: #89888c;
+}
+
+.text--footer {
+  color: #89888c;
+}
+
 .text--alignment {
   text-align: alignments;
 }
@@ -616,20 +624,29 @@ p {
   font-size: 14px;
 }
 
-.btn, .btn.bg--secondary {
+.btn, .btnbg--slider, .bg--secondary.btnbg--slider, .btn.bg--secondary {
   padding: 0.8rem 2rem;
   background: transparent;
   border: 1px solid transparent;
   font-size: 1rem;
 }
-.btn.bg--secondary {
+.btn.bg--secondary, .bg--secondary.btnbg--slider {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover {
+.btn.bg--secondary:hover, .bg--secondary.btnbg--slider:hover {
   background-color: #fff;
   border: 1px solid #f8565d;
   color: #f8565d;
+}
+.btnbg--slider {
+  background-color: #fff;
+  color: #f8565d;
+}
+.btnbg--slider:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
 
 .tns-outer {
@@ -640,6 +657,7 @@ p {
 }
 
 .tns-nav {
+  display: none;
   text-align: center;
 }
 .tns-nav button {
@@ -661,10 +679,11 @@ p {
   color: #f8565d;
   border-radius: 50%;
   background-color: #fff;
+  border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 42rem;
-  left: 78.5rem;
+  bottom: 36.5rem;
+  left: 75.5rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
@@ -672,10 +691,12 @@ p {
     display: none;
   }
 }
-
-.next {
-  left: 78.5rem;
+.prev:hover, .next:hover {
+  background-color: #f8565d;
+  color: #fff;
+  border: 1px solid #f8565d;
 }
+
 @media screen and (max-width: 520px) {
   .next {
     display: none;
@@ -685,6 +706,7 @@ p {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 .header__wrapper {
   display: flex;
@@ -868,15 +890,16 @@ p {
 }
 
 .Services {
-  padding-top: 20rem;
+  padding-top: 9.42rem;
+  padding-bottom: 2rem;
 }
 .Services__wrapper {
-  padding: 5rem;
   background-color: #3e3e43;
+  margin: 0 auto;
+  padding: 5rem;
 }
 .Services__slider {
   display: flex;
-  gap: 2rem;
   padding-top: 1rem;
 }
 .Services__title::after {
@@ -888,17 +911,25 @@ p {
   height: 1px;
   background-color: #89888c;
 }
-.Services__card {
+
+.Price {
   padding-bottom: 2rem;
 }
-.Services__card img {
-  padding-bottom: 1rem;
+.Price h2 {
+  font-weight: 200;
+  color: #26252a;
 }
-.Services__card span {
+.Price a {
   font-size: 13px;
-  font-family: "Ubuntu", Arial, sans-serif;
   color: #f8565d;
 }
-.Services__card a {
-  color: #fff;
+.Price p {
+  color: #26252a;
+}
+.Price__wrapper {
+  padding: 5rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
 }/*# sourceMappingURL=main.min.css.map */

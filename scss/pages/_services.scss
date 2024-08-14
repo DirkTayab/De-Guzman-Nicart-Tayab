@@ -2,16 +2,17 @@
 @use "../base/" as *;
 
 .Services {
-  padding-top: 20rem;
+  padding-top: 9.42rem;
+  padding-bottom: 2rem;
   &__wrapper {
-    padding: 5rem;
     background-color: $clr--primary;
-    max-width: 70rem;
     margin: 0 auto;
+    padding: 5rem;
   }
+
   &__slider {
     display: flex;
-    gap: 2rem;
+
     padding-top: 1rem;
   }
   &__title {
@@ -25,18 +26,24 @@
       background-color: #89888c;
     }
   }
-  &__card {
-    img {
-      padding-bottom: 1rem;
-    }
-    span {
-      font-size: 13px;
-      font-family: $font-primary;
-      color: $clr--secondary;
-    }
-    a {
-      color: $clr--light;
-    }
-    padding-bottom: 2rem;
+}
+
+.Price {
+  padding-bottom: 2rem;
+  h2 {
+    font-weight: 200;
+    color: $clr--dark;
+  }
+  a {
+    font-size: 13px;
+    color: $clr--secondary;
+  }
+  p {
+    color: $clr--dark;
+  }
+  &__wrapper {
+    padding: 5rem;
+    background-color: $clr--light;
+    @include unevengrid(1fr 2fr, 2rem);
   }
 }

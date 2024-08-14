@@ -7,6 +7,7 @@
   }
 }
 .tns-nav {
+  display: none;
   text-align: center;
   button {
     margin: 2rem 0.5rem;
@@ -26,18 +27,23 @@
   color: $clr--secondary;
   border-radius: 50%;
   background-color: $clr--light;
+  border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 42rem;
-  left: 78.5rem;
-  padding: 0.5rem .58rem;
+  bottom: 36.5rem;
+  left: 75.5rem;
+  padding: 0.5rem 0.58rem;
   @include mediaQuery(520px) {
     display: none;
+  }
+  &:hover {
+    background-color: $clr--secondary;
+    color: $clr--light;
+    border: 1px solid $clr--secondary;
   }
 }
 .next {
   @extend .prev;
-  left: 78.5rem;
   @include mediaQuery(520px) {
     display: none;
   }
