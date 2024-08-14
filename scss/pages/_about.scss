@@ -12,12 +12,17 @@
     }
   }
   &__wrapper{
+    display: flex;
+    flex-direction: column;
     background-color: $clr--primary;
-    padding-top: 2.5rem;
-    @include evengrid(4,5rem);
-    @include centerAll;
+    padding: 5rem;
+    gap: 5rem;
     p{
       padding-bottom: 2rem;
     }
+  }
+  &__content{
+    @include centerAll;
+    @include evengrid(4, 5rem);
   }
 }

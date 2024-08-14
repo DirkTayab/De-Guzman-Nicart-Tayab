@@ -26,11 +26,11 @@
 }
 
 .bg--secondary {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 .text--secondary {
-  color: #fa858a;
+  color: #f8565d;
 }
 
 .text--alignment {
@@ -617,14 +617,14 @@ img {
   font-size: 1rem;
 }
 .btn.bg--secondary {
-  background-color: #fa858a;
+  background-color: #f8565d;
   color: #fff;
   font-weight: 600;
 }
 .btn.bg--secondary:hover {
   background-color: #fff;
-  border: 1px solid #fa858a;
-  color: #fa858a;
+  border: 1px solid #f8565d;
+  color: #f8565d;
 }
 
 .tns-outer {
@@ -645,7 +645,7 @@ img {
   border: none;
 }
 .tns-nav-active {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 #controls {
@@ -653,7 +653,7 @@ img {
 }
 
 .prev, .next {
-  color: #fa858a;
+  color: #f8565d;
   font-size: 2rem;
   position: relative;
   bottom: 16rem;
@@ -716,16 +716,21 @@ img {
   font-weight: 200;
 }
 .aboutBanner__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #3e3e43;
-  padding-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem;
   gap: 5rem;
+}
+.aboutBanner__wrapper p {
+  padding-bottom: 2rem;
+}
+.aboutBanner__content {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-}
-.aboutBanner__wrapper p {
-  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
 }/*# sourceMappingURL=main.min.css.map */
