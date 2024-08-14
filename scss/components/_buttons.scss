@@ -10,7 +10,6 @@
     @extend .btn;
     background-color: $clr--secondary;
     color: $clr--light;
-    font-weight: 600;
     &:hover {
       background-color: $clr--light;
       border: 1px solid $clr--secondary;

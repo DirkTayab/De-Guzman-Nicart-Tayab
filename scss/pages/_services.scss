@@ -1,0 +1,42 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.Services {
+  padding-top: 20rem;
+  &__wrapper {
+    padding: 5rem;
+    background-color: $clr--primary;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  &__slider {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+  &__title {
+    &::after {
+      display: inline-block;
+      position: relative;
+      content: " ";
+      width: 75rem;
+      top: -0.5rem;
+      height: 1px;
+      background-color: #89888c;
+    }
+  }
+  &__card {
+    img {
+      padding-bottom: 1rem;
+    }
+    span {
+      font-size: 13px;
+      font-family: $font-primary;
+      color: $clr--secondary;
+    }
+    a {
+      color: $clr--light;
+    }
+    padding-bottom: 2rem;
+  }
+}

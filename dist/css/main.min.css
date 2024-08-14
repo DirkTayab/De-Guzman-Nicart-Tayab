@@ -625,7 +625,6 @@ p {
 .btn.bg--secondary {
   background-color: #f8565d;
   color: #fff;
-  font-weight: 600;
 }
 .btn.bg--secondary:hover {
   background-color: #fff;
@@ -660,10 +659,13 @@ p {
 
 .prev, .next {
   color: #f8565d;
-  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1rem;
   position: relative;
-  bottom: 16rem;
-  left: 6rem;
+  bottom: 42rem;
+  left: 78.5rem;
+  padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
   .prev, .next {
@@ -672,7 +674,7 @@ p {
 }
 
 .next {
-  left: 80rem;
+  left: 78.5rem;
 }
 @media screen and (max-width: 520px) {
   .next {
@@ -863,4 +865,40 @@ p {
   top: -1.5rem;
   height: 1px;
   background-color: #89888c;
+}
+
+.Services {
+  padding-top: 20rem;
+}
+.Services__wrapper {
+  padding: 5rem;
+  background-color: #3e3e43;
+}
+.Services__slider {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.Services__title::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 75rem;
+  top: -0.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Services__card {
+  padding-bottom: 2rem;
+}
+.Services__card img {
+  padding-bottom: 1rem;
+}
+.Services__card span {
+  font-size: 13px;
+  font-family: "Ubuntu", Arial, sans-serif;
+  color: #f8565d;
+}
+.Services__card a {
+  color: #fff;
 }/*# sourceMappingURL=main.min.css.map */

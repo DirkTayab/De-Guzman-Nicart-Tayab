@@ -24,17 +24,20 @@
 }
 .prev {
   color: $clr--secondary;
-  font-size: 2rem;
+  border-radius: 50%;
+  background-color: $clr--light;
+  font-size: 1rem;
   position: relative;
-  bottom: 16rem;
-  left: 6rem;
+  bottom: 42rem;
+  left: 78.5rem;
+  padding: 0.5rem .58rem;
   @include mediaQuery(520px) {
     display: none;
   }
 }
 .next {
   @extend .prev;
-  left: 80rem;
+  left: 78.5rem;
   @include mediaQuery(520px) {
     display: none;
   }
