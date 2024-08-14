@@ -26,11 +26,11 @@
 }
 
 .bg--secondary {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 .text--secondary {
-  color: #fa858a;
+  color: #f8565d;
 }
 
 .text--alignment {
@@ -503,7 +503,7 @@ p {
 
 body {
   color: #fff;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu Condensed", normal;
   font-size: 2rem;
   overflow-x: hidden;
   line-height: 1.4;
@@ -568,7 +568,6 @@ thead,
 tr,
 th,
 td {
-  font-family: "Ubuntu", normal;
   border: 0;
   font-size: 100%;
   margin: 0;
@@ -606,9 +605,25 @@ img {
 
 .container {
   width: 100%;
-  max-width: 100rem;
+  max-width: 98rem;
   margin: 0 auto;
   padding: 0 5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .btn, .btn.bg--secondary {
@@ -618,14 +633,14 @@ img {
   font-size: 1rem;
 }
 .btn.bg--secondary {
-  background-color: #fa858a;
+  background-color: #f8565d;
   color: #fff;
   font-weight: 600;
 }
 .btn.bg--secondary:hover {
   background-color: #fff;
-  border: 1px solid #fa858a;
-  color: #fa858a;
+  border: 1px solid #f8565d;
+  color: #f8565d;
 }
 
 .tns-outer {
@@ -646,7 +661,7 @@ img {
   border: none;
 }
 .tns-nav-active {
-  background-color: #fa858a;
+  background-color: #f8565d;
 }
 
 #controls {
@@ -654,7 +669,7 @@ img {
 }
 
 .prev, .next {
-  color: #fa858a;
+  color: #f8565d;
   font-size: 2rem;
   position: relative;
   bottom: 16rem;
@@ -701,6 +716,42 @@ img {
   transition: all 0.5s ease;
 }
 
+.footer {
+  padding: 5rem 0;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.footer__wrapper p {
+  color: #89888c;
+  font-family: "Ubuntu", normal;
+  font-size: 13px;
+}
+.footer__wrapper iframe {
+  width: 45rem;
+  height: 20rem;
+}
+.footer__socials {
+  padding-left: 5rem;
+}
+.footer__social {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+.footer__social i {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.footer__location1 {
+  margin-bottom: 1rem;
+}
+
 .aboutBanner {
   background-color: #26252a;
   padding: 5rem;
@@ -723,4 +774,44 @@ img {
 }
 .aboutBanner__wrapper p {
   padding-bottom: 2rem;
+}
+
+.blog {
+  padding-top: 10rem;
+}
+.blog__wrapper {
+  padding: 7rem;
+  background: #343438;
+}
+.blog__card {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #89888c;
+}
+.blog__card h3 {
+  font-size: 40px;
+  font-weight: normal;
+}
+.blog__details h4 {
+  font-size: h3;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.blog__details p {
+  font-family: "Ubuntu", normal;
+  width: 90%;
+  margin-bottom: 2.5rem;
+}
+.blog__title h3 {
+  font-size: 40px;
+  padding-bottom: 1rem;
+  font-weight: normal;
+  border-bottom: 1px solid #89888c;
+}
+.blog__date {
+  padding-left: 1rem;
+}
+.blog__date span {
+  font-size: 83px;
 }/*# sourceMappingURL=main.min.css.map */

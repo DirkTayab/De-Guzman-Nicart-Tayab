@@ -2,7 +2,7 @@
 @use "./typography" as *;
 body {
     color: $clr--light;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 2rem;
     overflow-x: hidden;
     line-height: 1.4;
@@ -67,7 +67,6 @@ body {
   tr,
   th,
   td {
-    font-family: $font-primary;
     border: 0;
     font-size: 100%;
     margin: 0;
@@ -100,10 +99,25 @@ body {
     max-width: 100%;
     width: 100%;
   }
-  
+
   .container {
     width: 100%;
-    max-width: 100rem;
+    max-width: 98rem;
     margin: 0 auto;
     padding: 0 5rem;
-  }  
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }

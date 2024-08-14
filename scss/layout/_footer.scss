@@ -1,4 +1,38 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.footer{
+    padding: 5rem 0;
+    &__wrapper{
+        @include evengrid(3, 5rem);
+        p{
+            color: $clr--footer;
+            font-family: $font-primary;
+            font-size: 13px;
+            
+        }
+        iframe{
+            width: 45rem;
+            height: 20rem;
+        }
+    }
 
+    &__socials{
+        padding-left: 5rem;
+    }
+    &__social{
+        display: flex;
+        gap: 0.5rem;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        i{
+            color: $clr--light;
+            border: 2px solid $clr--light;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+    }
+    &__location1{
+        margin-bottom: 1rem;
+    }
+}
