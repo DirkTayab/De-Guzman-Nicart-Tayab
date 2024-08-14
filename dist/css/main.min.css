@@ -717,6 +717,7 @@ img {
   }
 }
 
+<<<<<<< HEAD
 .header {
   position: fixed;
   width: 100%;
@@ -742,4 +743,46 @@ img {
 .header__nav li a:hover {
   border-bottom: 7px solid #f8565d;
   transition: all 0.5s ease;
+=======
+<<<<<<< HEAD
+.aboutBanner {
+  background-color: #3e3e43;
+  padding: 5rem;
+}
+.aboutBanner__title h2 {
+  font-size: 5rem;
+  color: #fa858a;
+=======
+.footer {
+  padding: 2rem 0;
+}
+.footer p {
+  color: #89888c;
+  font-family: "Ubuntu", normal;
+  font-size: 13px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__social {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer__social i {
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+>>>>>>> 4059a79f3e19607b317a0dbe6143657022b8f9da
+>>>>>>> 01775abf65d39b0c472f2fca9727a078443205ff
 }/*# sourceMappingURL=main.min.css.map */

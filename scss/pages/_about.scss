@@ -1,0 +1,13 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutBanner {
+  background-color: $clr--primary;
+  padding: 5rem;
+  &__title {
+    h2 {
+      font-size: 5rem;
+      color: $clr--secondary;
+    }
+  }
+}
