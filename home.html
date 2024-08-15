@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -31,7 +32,7 @@
     </header>
 
     <!-- HOME BANNER -->
-    <section class="homeBanner">
+    <!-- <section class="homeBanner">
       <div class="container">
         <div class="homeBanner__wrapper">
           <div class="homeBanner__slider">
@@ -66,14 +67,27 @@
               </div>
             </div>
           </div>
+          <div class="homeServices2__controls" id="controls">
+            <a class="homeServices2__prev"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+            <a class="homeServices2__next"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <!-- HOME SERVICES -->
     <section class="homeServices">
       <div class="container">
         <div class="homeServices__wrapper bg--primary">
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-duration="300"
+          >
             <h3>COMPLETE SERVICES</h3>
             <i class="fa-solid fa-gears"></i>
             <p>
@@ -84,7 +98,11 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
             <h3>OIL CHANGE</h3>
             <i class="fa-solid fa-droplet"></i>
             <p>
@@ -94,7 +112,11 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
             <h3>ENGINE REPAIR</h3>
             <i class="fa-solid fa-filter"></i>
             <p>
@@ -105,7 +127,11 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-left"
+            data-aos-duration="300"
+          >
             <h3>SCHEDULED MAINTENANCE</h3>
             <i class="fa-solid fa-wrench"></i>
             <p>
@@ -119,11 +145,78 @@
       </div>
     </section>
 
+    <!-- HOME SERVICES 2 -->
+    <section class="homeServices2">
+      <div class="container">
+        <div class="homeServices2__wrapper bg--secondary">
+          <h2>SERVICES</h2>
+          <div class="homeServices2__controls" data-aos="fade-up" id="controls">
+            <a class="homeServices2__prev"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+            <a class="homeServices2__next"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="homeServices2__slider">
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices1.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices2.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices3.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices1.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices2.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+            <div class="homeServices2__list" data-aos="fade-up">
+              <img src="./img/homeservices3.jpg" alt="" />
+              <p>
+                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+                erase dialor innia est. Proin dictum elemum velit terdpibus
+                sceleue vitaepeecon eoc in vel ipsum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- HOME ABOUT -->
     <section class="homeAbout">
       <div class="container">
         <div class="homeAbout__wrapper bg--light">
-          <div class="homeAbout__what">
+          <div class="homeAbout__what" data-aos="fade-up">
             <h2>WHAT WE DO</h2>
             <small
               >Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in
@@ -140,7 +233,7 @@
               Vestibulum sed ante.
             </p>
           </div>
-          <div class="homeAbout__why">
+          <div class="homeAbout__why" data-aos="fade-down">
             <h2>WHY US</h2>
             <small
               >Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
@@ -163,79 +256,12 @@
       </div>
     </section>
 
-    <!-- HOME SERVICES 2 -->
-    <section class="homeServices2">
-      <div class="container">
-        <div class="homeServices2__wrapper bg--secondary">
-          <h2>SERVICES</h2>
-          <div class="homeServices2__controls" id="controls">
-            <a class="homeServices2__prev"
-              ><i class="fa-solid fa-arrow-left"></i
-            ></a>
-            <a class="homeServices2__next"
-              ><i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-          <div class="homeServices2__slider">
-            <div class="homeServices2__list">
-              <img src="./img/homeservices1.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-            <div class="homeServices2__list">
-              <img src="./img/homeservices2.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-            <div class="homeServices2__list">
-              <img src="./img/homeservices3.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-            <div class="homeServices2__list">
-              <img src="./img/homeservices1.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-            <div class="homeServices2__list">
-              <img src="./img/homeservices2.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-            <div class="homeServices2__list">
-              <img src="./img/homeservices3.jpg" alt="" />
-              <p>
-                Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
-                erase dialor innia est. Proin dictum elemum velit terdpibus
-                sceleue vitaepeecon eoc in vel ipsum
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- RAP -->
     <section class="rap">
       <div class="container">
         <div class="rap__wrapper bg--primary">
-          <h1>NO BETTER CAR SERVICE ANYWHERE</h1>
-          <h4>
+          <h1 data-aos="fade-up">NO BETTER CAR SERVICE ANYWHERE</h1>
+          <h4 data-aos="fade-up">
             <a href="" class="btn bg--rap">REQUEST AN APPOINTMENT</a
             ><i class="fa-regular fa-calendar-days"></i>
           </h4>
@@ -289,8 +315,11 @@
       </div>
     </footer>
     <!-- SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/home_slider.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

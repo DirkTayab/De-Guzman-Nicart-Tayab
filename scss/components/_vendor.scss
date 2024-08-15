@@ -6,7 +6,7 @@
     display: none;
   }
 }
-.tns-visually-hidden{
+.tns-visually-hidden {
   display: none;
 }
 .tns-nav {
@@ -23,6 +23,7 @@
     background-color: $clr--secondary;
   }
 }
+
 #controls {
   position: absolute;
 }
@@ -45,7 +46,7 @@
 }
 .homeServices2__next {
   @extend .homeServices2__prev;
-  @include mediaQuery(520px)  {
+  @include mediaQuery(520px) {
     display: none;
   }
 }

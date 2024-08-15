@@ -3,7 +3,11 @@
 
 .homeBanner {
   &__wrapper {
-
+    margin: 0 auto;
+  }
+  &__slider{
+    display: flex;
+    flex-direction: column;
   }
   &__cars {
     position: relative;

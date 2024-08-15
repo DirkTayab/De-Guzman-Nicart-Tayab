@@ -804,6 +804,13 @@ p, small {
   margin-left: 6.5rem;
 }
 
+.homeBanner__wrapper {
+  margin: 0 auto;
+}
+.homeBanner__slider {
+  display: flex;
+  flex-direction: column;
+}
 .homeBanner__cars {
   position: relative;
 }
