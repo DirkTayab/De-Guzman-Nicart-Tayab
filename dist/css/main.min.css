@@ -639,6 +639,7 @@ p {
 .btn.bg--secondary:hover {
   background-color: #fff;
   color: #26252a;
+  transition: 0.5s;
 }
 .btn.bg--slider {
   background-color: #fff;
@@ -683,7 +684,7 @@ p {
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 38.5rem;
+  bottom: 48rem;
   left: 75.5rem;
   padding: 0.5rem 0.58rem;
 }
@@ -737,20 +738,25 @@ p {
 }
 
 .footer {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 .footer p {
   color: #89888c;
   font-family: "Ubuntu", Arial, sans-serif;
   font-size: 13px;
+  line-height: 1.3rem;
 }
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+.footer__wrapper iframe {
+  height: 294px;
+  width: 680px;
+}
 .footer__social {
-  padding: 1rem 0;
+  padding-top: 3rem;
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -758,14 +764,25 @@ p {
 .footer__social i {
   padding: 0.8rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: 2px solid #fff;
   border-radius: 50%;
 }
+.footer__social i:hover {
+  background-color: #f8565d;
+  border: 2px solid #f8565d;
+  transition: all 0.5s ease;
+}
 .footer__location {
+  margin-top: 2rem;
+  margin-left: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+}
+.footer__socials {
+  margin-top: 2rem;
+  margin-left: 6.5rem;
 }
 
 .homeServices {
@@ -811,20 +828,18 @@ p {
 }
 
 .aboutBanner {
-  padding-top: 8rem;
+  padding-top: 11.7rem;
   padding-bottom: 2rem;
 }
 .aboutBanner__title::after {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 65rem;
+  width: 78rem;
   height: 1px;
   background-color: #89888c;
 }
 .aboutBanner__title h2 {
-  font-size: 40px;
-  font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__wrapper {
@@ -883,8 +898,8 @@ p {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 49rem;
-  top: -1rem;
+  width: 50rem;
+  top: -2.25rem;
   height: 0.1rem;
   background-color: #89888c;
 }
@@ -895,33 +910,45 @@ p {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 23rem;
-  top: -1rem;
+  width: 25rem;
+  top: -2.25rem;
   height: 0.1rem;
   background-color: #89888c;
+}
+.aboutHistory__opportunities a:hover {
+  color: #26252a;
+  transition: 0.5s;
 }
 
 .aboutTeam {
   padding-bottom: 2rem;
 }
-.aboutTeam span {
+.aboutTeam a {
   color: #f8565d;
   font-size: 13px;
 }
-.aboutTeam p {
+.aboutTeam a:hover {
+  transition: 0.5s;
   color: #26252a;
 }
-.aboutTeam p a {
+.aboutTeam p {
   color: #26252a;
 }
 .aboutTeam__wrapper {
   background-color: #fff;
   padding: 5rem;
 }
-.aboutTeam__content {
+.aboutTeam__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+.aboutTeam__content a {
+  color: #26252a;
+}
+.aboutTeam__content a:hover {
+  color: #f8565d;
+  transition: 0.5s;
 }
 .aboutTeam__title h2 {
   font-family: "Ubuntu Condensed", Arial, sans-serif;
@@ -931,8 +958,8 @@ p {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 75.15rem;
-  top: -1.5rem;
+  width: 78rem;
+  top: -2.25rem;
   height: 1px;
   background-color: #89888c;
 }
@@ -944,7 +971,13 @@ p {
 .Services__wrapper {
   background-color: #3e3e43;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 8rem;
+}
+.Services__card .tns-item {
+  padding-right: 2rem;
+}
+.Services__top {
+  padding-bottom: 2rem;
 }
 .Services__slider {
   display: flex;
@@ -954,7 +987,7 @@ p {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 75rem;
+  width: 72rem;
   top: -0.5rem;
   height: 1px;
   background-color: #89888c;

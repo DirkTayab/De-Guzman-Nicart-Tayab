@@ -7,9 +7,16 @@
   &__wrapper {
     background-color: $clr--primary;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 8rem;
   }
-
+  &__card{
+    .tns-item{
+      padding-right: 2rem;
+    }
+  }
+  &__top {
+    padding-bottom: 2rem;
+  }
   &__slider {
     display: flex;
 
@@ -20,7 +27,7 @@
       display: inline-block;
       position: relative;
       content: " ";
-      width: 75rem;
+      width: 72rem;
       top: -0.5rem;
       height: 1px;
       background-color: #89888c;
@@ -79,14 +86,13 @@
         color: $clr--secondary;
       }
     }
-    p{
+    p {
       width: 50rem;
     }
   }
 
   p {
     color: $clr--dark;
-    
   }
   &__wrapper {
     padding: 5rem;

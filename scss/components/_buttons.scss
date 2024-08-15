@@ -10,6 +10,7 @@
     &:hover {
       background-color: $clr--light;
       color: $clr--dark;
+      transition: 0.5s
     }
   }
   &.bg--slider{

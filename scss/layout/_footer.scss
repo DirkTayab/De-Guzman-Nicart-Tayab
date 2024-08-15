@@ -1,52 +1,48 @@
-// @use "../abstract/" as *;
-// @use "../base/" as *;
-
-// .footer{
-//     padding: 5rem 0;
-//     &__wrapper{
-//         @include evengrid(3, 5rem);
-//         p{
-//             color: $clr--footer;
-//             font-family: $font-primary;
-//             font-size: 13px;
-            
-//         }
-//         iframe{
-//             width: 45rem;
-//             height: 20rem;
-//         }
-//     }
-
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.footer{
-    padding: 2rem 0;
-    p{
-        color: $clr--footer;
-        font-family: $font-primary;
-        font-size: 13px;
+.footer {
+  padding: 1.5rem 0;
+  p {
+    color: $clr--footer;
+    font-family: $font-primary;
+    font-size: 13px;
+    line-height: 1.3rem;
+  }
+  &__wrapper {
+    @include evengrid(3, 2rem);
+    iframe {
+      height: 294px;
+      width: 680px;
     }
-    &__wrapper{
-        @include evengrid(3, 2rem);
+  }
+  &__social {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    i {
+      padding: 0.8rem;
+      color: $clr--light;
+      font-size: 1rem;
+      border: 2px solid $clr--light;
+      border-radius: 50%;
+      &:hover {
+        background-color: $clr--secondary;
+        border: 2px solid $clr--secondary;
+        transition: all 0.5s ease;
+      }
     }
-    &__social{
-        padding: 1rem 0;
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        i{
-            padding: 0.8rem;
-            color: $clr--light;
-            font-size: 1.2rem;
-            border: 2px solid $clr--light;
-            border-radius: 50%;
-        }
-    }
-    &__location{
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
+  }
+  &__location {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__socials {
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+  }
 }

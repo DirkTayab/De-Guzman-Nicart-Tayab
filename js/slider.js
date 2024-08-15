@@ -1,10 +1,10 @@
 var slider = tns({
   container: ".Services__slider",
   items: 3,
-  speed: 500,
-  gutter: 100,
+  speed: 1000,
+  gutter: 50,
+  rewind: true,
   slideBy: "1",
-  autoplay: true,
   navPosition: "bottom",
   containerControls: "#controls",
   prevButton: ".Services__prev",
