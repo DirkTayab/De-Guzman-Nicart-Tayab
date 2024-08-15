@@ -10,10 +10,10 @@
     &:hover {
       background-color: $clr--light;
       color: $clr--dark;
+      transition: all 0.5s ease;
     }
   }
-}
-  &bg--slider{
+  &.bg--slider{
     @extend .btn;
     background-color: $clr--light;
     color: $clr--secondary;
@@ -23,4 +23,4 @@
       border: 1px solid $clr--secondary;
     }
   }
-
+}
