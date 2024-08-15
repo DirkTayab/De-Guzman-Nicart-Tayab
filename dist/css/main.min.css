@@ -658,6 +658,13 @@ p {
   display: none;
 }
 
+.tns-inner {
+  overflow: hidden;
+}
+.tns-inner > button {
+  display: none;
+}
+
 .tns-nav {
   display: none;
   text-align: center;
@@ -785,46 +792,165 @@ p {
   margin-left: 6.5rem;
 }
 
+.homeBanner {
+  padding-top: 10.35rem;
+}
+.homeBanner__wrapper {
+  margin: 0 auto;
+}
+.homeBanner__slider {
+  display: flex;
+  flex-direction: column;
+}
+.homeBanner__cars {
+  position: relative;
+}
+.homeBanner__name {
+  position: absolute;
+  top: 40%;
+  left: 57rem;
+}
+.homeBanner__name h2 {
+  font-size: 56px;
+  line-height: 3.2rem;
+}
+
 .homeServices {
+  z-index: 999999999;
   margin-bottom: 2rem;
-  padding: 12rem 0 0 0;
 }
 .homeServices__wrapper {
-  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 5rem 7rem;
+  padding: 0 7rem;
 }
 .homeServices__card {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding: 5rem 0;
   flex-direction: column;
-  gap: 2.8rem;
+  gap: 2rem;
   position: relative;
 }
 .homeServices__card:hover span {
-  height: 155%;
+  height: 107%;
   width: 110%;
-  position: absolute;
-  background-color: #fff;
 }
-.homeServices__card h3 {
+.homeServices__card:hover i {
+  color: #f8565d;
+  transition: all 0.5s ease;
+}
+.homeServices__card:hover .btn {
+  background-color: #fff;
+  color: #26252a;
+  transition: all 0.5s ease;
+}
+.homeServices h3,
+.homeServices i,
+.homeServices p,
+.homeServices h4 {
+  z-index: 90;
+}
+.homeServices h3 {
   border-bottom: 4px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 2.5rem;
   width: 100%;
 }
-.homeServices__card i {
+.homeServices i {
   font-size: 3rem;
 }
+.homeServices p {
+  padding: 1rem 0 2rem 0;
+}
+.homeServices span {
+  height: 0;
+  width: 0;
+  position: absolute;
+  background-color: #303033;
+  z-index: 10;
+}
 
+.homeServices2 {
+  margin-bottom: 2rem;
+}
+.homeServices2 h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5215686275);
+  padding-bottom: 0.7rem;
+}
 .homeServices2__wrapper {
-  padding: 5rem 7rem;
+  padding: 6rem 7rem;
 }
 .homeServices2__slider {
+  margin-top: 2rem;
   display: flex;
+}
+.homeServices2__slider p {
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.5rem;
+  font-size: 13px;
+}
+
+.homeAbout {
+  margin-bottom: 2rem;
+}
+.homeAbout__wrapper {
+  padding: 6rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.homeAbout__wrapper h2,
+.homeAbout__wrapper small,
+.homeAbout__wrapper h5 {
+  border-bottom: 1px solid rgba(48, 48, 51, 0.2823529412);
+  padding-bottom: 1rem;
+  color: #3e3e43;
+}
+.homeAbout__wrapper small {
+  padding-top: 2rem;
+  font-size: 15px;
+}
+.homeAbout__wrapper h2 {
+  padding-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+.homeAbout__wrapper p {
+  color: #3e3e43;
+  font-size: 15px;
+}
+.homeAbout__what {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.homeAbout__what p {
+  padding-top: 1rem;
+}
+.homeAbout__why {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.homeAbout__why h5 {
+  color: #f8565d;
+}
+
+.rap {
+  margin-bottom: 2rem;
+}
+.rap__wrapper {
+  padding: 7rem 7rem 8.4rem 7rem;
+}
+.rap h4 {
+  margin-top: 3.7rem;
+}
+.rap i {
+  margin-left: 1.2rem;
+  font-size: 30px;
 }
 
 .aboutBanner {

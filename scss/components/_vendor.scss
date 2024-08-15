@@ -6,6 +6,12 @@
     display: none;
   }
 }
+.tns-inner {
+  overflow: hidden;
+  & > button {
+    display: none;
+  }
+}
 .tns-nav {
   display: none;
   text-align: center;

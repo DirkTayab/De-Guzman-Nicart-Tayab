@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER -->
@@ -20,7 +21,7 @@
             ><img src="./img/logo.png" alt=""
           /></a>
           <ul class="header__nav">
-            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./home.html" class="active">HOME</a></li>
             <li><a href="./about.html">ABOUT</a></li>
             <li><a href="./services.html">SERVICES</a></li>
             <li><a href="./blog.html">BLOG</a></li>
@@ -30,11 +31,54 @@
       </div>
     </header>
 
+    <!-- HOME BANNER -->
+    <section class="homeBanner">
+      <div class="container">
+        <div class="homeBanner__wrapper">
+          <div class="homeBanner__slider">
+            <div class="homeBanner__cars">
+              <img src="./img/banner1.jpg" alt="" />
+              <div class="homeBanner__name">
+                <h2>
+                  COMPLETE<br />
+                  AUTO SERVICE
+                </h2>
+              </div>
+            </div>
+            <div class="homeBanner__cars">
+              <img src="./img/banner2.jpg" alt="" />
+              <div class="homeBanner__name">
+                <h2>
+                  QUALITY CAR<br />
+                  MAINTENANCE
+                </h2>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="homeBanner__cars">
+              <img src="./img/banner3.jpg" alt="" />
+              <div class="homeBanner__name">
+                <h2>
+                  FAIR FRIENDLY<br />
+                  SERVICE
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- HOME SERVICES -->
     <section class="homeServices">
       <div class="container">
         <div class="homeServices__wrapper bg--primary">
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <h3>COMPLETE SERVICES</h3>
             <i class="fa-solid fa-gears"></i>
             <p>
@@ -45,7 +89,12 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <h3>OIL CHANGE</h3>
             <i class="fa-solid fa-droplet"></i>
             <p>
@@ -55,7 +104,12 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <h3>ENGINE REPAIR</h3>
             <i class="fa-solid fa-filter"></i>
             <p>
@@ -66,7 +120,11 @@
             <h4><a href="" class="btn bg--secondary">MORE</a></h4>
             <span></span>
           </div>
-          <div class="homeServices__card">
+          <div
+            class="homeServices__card"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <h3>SCHEDULED MAINTENANCE</h3>
             <i class="fa-solid fa-wrench"></i>
             <p>
@@ -80,14 +138,62 @@
       </div>
     </section>
 
-    <!-- HOME SERVICES -->
+    <!-- HOME ABOUT -->
+    <section class="homeAbout">
+      <div class="container">
+        <div class="homeAbout__wrapper bg--light">
+          <div class="homeAbout__what">
+            <h2>WHAT WE DO</h2>
+            <small
+              >Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in
+              vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia
+              esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door
+              sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam
+              cong.</small
+            >
+            <p>
+              Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing
+              aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in
+              auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo
+              dolor lobortis quis lobortis dignissim pulvinar ac lorem.
+              Vestibulum sed ante.
+            </p>
+          </div>
+          <div class="homeAbout__why">
+            <h2>WHY US</h2>
+            <small
+              >Cubilipende sollicitudineied leo pharea aumennec in velit veaugn
+              erase dialor innia est. Proin dictum elemum velit terdpibus
+              sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper
+              u et felisestiulis lacinia est.</small
+            >
+            <h5>
+              Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel
+              ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia
+              eroin dictum elemenelit.
+            </h5>
+            <p>
+              Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door
+              sit amet con sectetuer adipiscing elit. Pellentesque sed
+              dololiquam cong.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME SERVICES 2 -->
     <section class="homeServices2">
       <div class="container">
         <div class="homeServices2__wrapper bg--secondary">
           <h2>SERVICES</h2>
           <div class="homeServices2__controls" id="controls">
-            <a class="prev"><i class="fa-solid fa-chevron-left"></i></a>
-            <a class="next"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="homeServices2__prev"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+            <a class="homeServices2__next"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
           <div class="homeServices2__slider">
             <div class="homeServices2__list">
@@ -143,9 +249,70 @@
       </div>
     </section>
 
+    <!-- RAP -->
+    <section class="rap">
+      <div class="container">
+        <div class="rap__wrapper bg--primary">
+          <h1>NO BETTER CAR SERVICE ANYWHERE</h1>
+          <h4>
+            <a href="" class="btn bg--rap">REQUEST AN APPOINTMENT</a
+            ><i class="fa-regular fa-calendar-days"></i>
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__socials">
+            <p>Car service © 2024 • Privacy Policy</p>
+            <ul class="footer__social">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__location">
+            <div class="footer__location1">
+              <p>9863 - 9867 Mill Road,</p>
+              <p>Cambridge, MG09 99HT</p>
+              <p>Freephone: +1 800 559 6580</p>
+            </div>
+            <div class="footer__location2">
+              <p>9870 St Vincent Place,</p>
+              <p>Glasgow, DC 45 Fr 45.</p>
+              <p>Freephone: +1 800 559 6580</p>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.538399339352!2d-73.95986802348462!3d40.64599594165306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b493b5ae649%3A0xfbaa9e9d6f1ddde0!2sKings%20Theatre!5e0!3m2!1sen!2sus!4v1723682807422!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
     <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/home_slider.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
