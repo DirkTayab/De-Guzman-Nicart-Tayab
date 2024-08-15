@@ -34,16 +34,88 @@
     font-weight: 200;
     color: $clr--dark;
   }
-  a {
-    font-size: 13px;
-    color: $clr--secondary;
+  &__left {
+    h2::after {
+      display: inline-block;
+      position: relative;
+      content: " ";
+      width: 23rem;
+      top: -2rem;
+      height: 1px;
+      background-color: #89888c;
+    }
+    a {
+      font-size: 13px;
+      color: $clr--secondary;
+      display: block;
+      line-height: 1rem;
+      &::after {
+        display: inline-block;
+        position: relative;
+        content: " ";
+        width: 23rem;
+        top: -0.5rem;
+        height: 1px;
+        background-color: #89888c;
+      }
+    }
   }
+  &__right {
+    h2::after {
+      display: inline-block;
+      position: relative;
+      content: " ";
+      width: 49.5rem;
+      top: -2rem;
+      height: 1px;
+      background-color: #89888c;
+    }
+    a {
+      font-size: 13px;
+      color: $clr--dark;
+      display: block;
+      line-height: 1rem;
+      &:hover {
+        color: $clr--secondary;
+      }
+    }
+    p{
+      width: 50rem;
+    }
+  }
+
   p {
     color: $clr--dark;
+    
   }
   &__wrapper {
     padding: 5rem;
     background-color: $clr--light;
     @include unevengrid(1fr 2fr, 2rem);
+  }
+  &__lists {
+    margin-right: 5rem;
+    display: flex;
+    gap: 5rem;
+    color: $clr--dark;
+    em {
+      background: url(/img/ellipsis.png) repeat-x 0% 13px;
+      display: block;
+      overflow: hidden;
+    }
+    a {
+      width: 12.8rem;
+      float: left;
+      font-family: $clr--secondary;
+      &:hover {
+        color: $clr--secondary;
+      }
+    }
+  }
+  &__col {
+    margin-top: 1rem;
+    ul li {
+      padding-bottom: 1.5rem;
+    }
   }
 }

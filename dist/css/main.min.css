@@ -27,7 +27,6 @@
 
 .bg--secondary {
   background-color: #f8565d;
-  background-color: #f8565d;
 }
 
 .text--secondary {
@@ -40,7 +39,6 @@
 
 .text--footer {
   color: #89888c;
-  color: #f8565d;
 }
 
 .text--alignment {
@@ -628,31 +626,25 @@ h4 {
 p {
   font-size: 14px;
   font-weight: lighter;
-  font-family: "Ubuntu", normal;
+  font-family: "Ubuntu", Arial, sans-serif;
 }
 
-.btn, .btn.bg--secondary {
+.btn, .btn.bg--slider, .btn.bg--secondary {
   padding: 0.8rem 2rem;
 }
 .btn.bg--secondary {
-}
-
-.btn, .btnbg--slider, .bg--secondary.btnbg--slider, .btn.bg--secondary {
-  padding: 0.8rem 2rem;
-}
-.btn.bg--secondary, .bg--secondary.btnbg--slider {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover, .bg--secondary.btnbg--slider:hover {
+.btn.bg--secondary:hover {
   background-color: #fff;
   color: #26252a;
 }
-.btnbg--slider {
+.btn.bg--slider {
   background-color: #fff;
   color: #f8565d;
 }
-.btnbg--slider:hover {
+.btn.bg--slider:hover {
   background-color: #f8565d;
   color: #fff;
   border: 1px solid #f8565d;
@@ -684,30 +676,30 @@ p {
   position: absolute;
 }
 
-.prev, .next {
+.Services__prev, .Services__next {
   color: #f8565d;
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 36.5rem;
+  bottom: 38.5rem;
   left: 75.5rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
-  .prev, .next {
+  .Services__prev, .Services__next {
     display: none;
   }
 }
-.prev:hover, .next:hover {
+.Services__prev:hover, .Services__next:hover {
   background-color: #f8565d;
   color: #fff;
   border: 1px solid #f8565d;
 }
 
 @media screen and (max-width: 520px) {
-  .next {
+  .Services__next {
     display: none;
   }
 }
@@ -729,7 +721,6 @@ p {
 }
 .header__nav li a {
   color: #fff;
-  font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0 0.75rem 4.65rem 0.75rem;
@@ -743,6 +734,38 @@ p {
   height: 10px;
   color: #3e3e43;
   left: -100;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+.footer p {
+  color: #89888c;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-size: 13px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__social {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer__social i {
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .homeServices {
@@ -787,38 +810,6 @@ p {
   display: flex;
 }
 
-.footer {
-  padding: 2rem 0;
-}
-.footer p {
-  color: #89888c;
-  font-family: "Ubuntu", Arial, sans-serif;
-  font-size: 13px;
-}
-.footer__wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-.footer__social {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-.footer__social i {
-  padding: 0.8rem;
-  color: #fff;
-  font-size: 1.2rem;
-  border: 2px solid #fff;
-  border-radius: 50%;
-}
-.footer__location {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
 .aboutBanner {
   padding-top: 8rem;
   padding-bottom: 2rem;
@@ -832,8 +823,6 @@ p {
   background-color: #89888c;
 }
 .aboutBanner__title h2 {
-  font-size: 5rem;
-  color: #f8565d;
   font-size: 40px;
   font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 200;
@@ -978,9 +967,50 @@ p {
   font-weight: 200;
   color: #26252a;
 }
-.Price a {
+.Price__left h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -2rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__left a {
   font-size: 13px;
   color: #f8565d;
+  display: block;
+  line-height: 1rem;
+}
+.Price__left a::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -0.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__right h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 49.5rem;
+  top: -2rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__right a {
+  font-size: 13px;
+  color: #26252a;
+  display: block;
+  line-height: 1rem;
+}
+.Price__right a:hover {
+  color: #f8565d;
+}
+.Price__right p {
+  width: 50rem;
 }
 .Price p {
   color: #26252a;
@@ -991,6 +1021,31 @@ p {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
+}
+.Price__lists {
+  margin-right: 5rem;
+  display: flex;
+  gap: 5rem;
+  color: #26252a;
+}
+.Price__lists em {
+  background: url(/img/ellipsis.png) repeat-x 0% 13px;
+  display: block;
+  overflow: hidden;
+}
+.Price__lists a {
+  width: 12.8rem;
+  float: left;
+  font-family: #f8565d;
+}
+.Price__lists a:hover {
+  color: #f8565d;
+}
+.Price__col {
+  margin-top: 1rem;
+}
+.Price__col ul li {
+  padding-bottom: 1.5rem;
 }
 
 .blog {
