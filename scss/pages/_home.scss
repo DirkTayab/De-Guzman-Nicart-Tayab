@@ -3,8 +3,10 @@
 
 .homeBanner {
   padding-top: 10.35rem;
+  padding-bottom: 3rem;
   &__wrapper {
     margin: 0 auto;
+    max-height: 565.22px;
   }
   &__slider{
     display: flex;
