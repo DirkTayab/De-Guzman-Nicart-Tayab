@@ -6,6 +6,9 @@
     display: none;
   }
 }
+.tns-visually-hidden{
+  display: none;
+}
 .tns-nav {
   display: none;
   text-align: center;
@@ -23,28 +26,26 @@
 #controls {
   position: absolute;
 }
-.prev {
+.homeServices2__prev {
   color: $clr--secondary;
   border-radius: 50%;
   background-color: $clr--light;
-  border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 36.5rem;
-  left: 75.5rem;
+  bottom: 3rem;
+  left: 69rem;
   padding: 0.5rem 0.58rem;
   @include mediaQuery(520px) {
     display: none;
   }
   &:hover {
-    background-color: $clr--secondary;
-    color: $clr--light;
-    border: 1px solid $clr--secondary;
+    background-color: $clr--dark;
+    color: $clr--secondary;
   }
 }
-.next {
-  @extend .prev;
-  @include mediaQuery(520px) {
+.homeServices2__next {
+  @extend .homeServices2__prev;
+  @include mediaQuery(520px)  {
     display: none;
   }
 }

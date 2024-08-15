@@ -1,43 +1,157 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.homeBanner {
+  &__wrapper {
+
+  }
+  &__cars {
+    position: relative;
+  }
+
+  &__name {
+    position: absolute;
+    top: 40%;
+    left: 57rem;
+    h2 {
+      font-size: 56px;
+      line-height: 3.2rem;
+    }
+  }
+}
 .homeServices {
   margin-bottom: 2rem;
-  padding: 12rem 0 0 0;
   &__wrapper {
-    margin-top: 5rem;
     @include evengrid(4, 2rem);
-    padding: 5rem 7rem;
+    padding: 0 7rem;
   }
   &__card {
     @include centerAll;
+    padding: 5rem 0;
     flex-direction: column;
-    gap: 2.8rem;
+    gap: 2rem;
     position: relative;
     &:hover {
       span {
-        height: 155%;
+        height: 107%;
         width: 110%;
-        position: absolute;
+      }
+      i {
+        color: $clr--secondary;
+        transition: all 0.5s ease;
+      }
+
+      .btn {
         background-color: $clr--light;
+        color: $clr--dark;
+        transition: all 0.5s ease;
       }
     }
-    h3 {
-      border-bottom: 4px solid rgb(255, 255, 255, 0.1);
-      padding-bottom: 2.5rem;
-      width: 100%;
-    }
-    i {
-      font-size: 3rem;
-    }
+  }
+
+  h3,
+  i,
+  p,
+  h4 {
+    z-index: 90;
+  }
+
+  h3 {
+    border-bottom: 4px solid rgb(255, 255, 255, 0.1);
+    padding-bottom: 2.5rem;
+    width: 100%;
+  }
+  i {
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 1rem 0 2rem 0;
+  }
+
+  span {
+    height: 0;
+    width: 0;
+    position: absolute;
+    background-color: #303033;
+    z-index: 10;
   }
 }
 
 .homeServices2 {
+  margin-bottom: 2rem;
+  h2 {
+    border-bottom: 1px solid #ffffff85;
+    padding-bottom: 0.7rem;
+  }
   &__wrapper {
-    padding: 5rem 7rem;
+    padding: 6rem 7rem;
   }
   &__slider {
+    margin-top: 2rem;
     display: flex;
+    p {
+      margin: 1.5rem 0 1rem 0;
+      line-height: 1.5rem;
+      font-size: 13px;
+    }
   }
+}
+
+.homeAbout {
+  margin-bottom: 2rem;
+  &__wrapper {
+    padding: 6rem 7rem;
+    @include evengrid(2, 2rem);
+    align-items: start;
+    h2,
+    small,
+    h5 {
+      border-bottom: 1px solid #30303348;
+      padding-bottom: 1rem;
+      color: $clr--primary;
+    }
+    small {
+      padding-top: 2rem;
+      font-size: 15px;
+    }
+    h2 {
+      padding-bottom: 0;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      color: $clr--primary;
+      font-size: 15px;
+    }
+  }
+  &__what {
+    @include evengrid(1, 1rem);
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+  &__why {
+    @include evengrid(1, 1rem);
+    h5 {
+      color: $clr--secondary;
+    }
+  }
+}
+
+.rap {
+  margin-bottom: 2rem;
+  &__wrapper { 
+    padding: 7rem 7rem 8.4rem 7rem;
+}
+
+h4 {
+  margin-top: 3.7rem;
+}
+i  {
+  margin-left: 1.2rem;
+  font-size: 30px;
+}
+
+
 }
