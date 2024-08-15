@@ -25,7 +25,7 @@
   color: #3e3e43;
 }
 
-.bg--secondary {
+.bg--secondary, .btn.bg--rap {
   background-color: #f8565d;
 }
 
@@ -608,6 +608,12 @@ img {
   padding: 0 5rem;
 }
 
+h1 {
+  font-size: 122px;
+  font-weight: normal;
+  line-height: 6.85rem;
+}
+
 h2 {
   font-size: 40px;
   font-weight: lighter;
@@ -623,20 +629,27 @@ h4 {
   font-weight: lighter;
 }
 
-p {
+h5 {
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+p,
+small {
   font-size: 14px;
   font-weight: lighter;
   font-family: "Ubuntu", Arial, sans-serif;
 }
 
-.btn, .btn.bg--slider, .btn.bg--secondary {
+.btn, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
   padding: 0.8rem 2rem;
 }
-.btn.bg--secondary {
+.btn.bg--secondary, .btn.bg--rap {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover {
+.btn.bg--secondary:hover, .btn.bg--rap:hover {
   background-color: #fff;
   color: #26252a;
   transition: all 0.5s ease;
@@ -650,6 +663,10 @@ p {
   color: #fff;
   border: 1px solid #f8565d;
 }
+.btn.bg--rap {
+  padding: 1.5rem 2rem;
+  font-size: 20px;
+}
 
 .tns-outer {
   overflow: hidden;
@@ -658,8 +675,14 @@ p {
   display: none;
 }
 
-.tns-nav {
+.tns-inner {
+  overflow: hidden;
+}
+.tns-inner > button {
   display: none;
+}
+
+.tns-nav {
   text-align: center;
 }
 .tns-nav button {
@@ -677,36 +700,35 @@ p {
   position: absolute;
 }
 
-.prev, .next {
+.Services__prev, .Services__next {
   color: #f8565d;
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 36.5rem;
+  bottom: 48rem;
   left: 75.5rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
-  .prev, .next {
+  .Services__prev, .Services__next {
     display: none;
   }
 }
-.prev:hover, .next:hover {
+.Services__prev:hover, .Services__next:hover {
   background-color: #f8565d;
   color: #fff;
   border: 1px solid #f8565d;
 }
 
 @media screen and (max-width: 520px) {
-  .next {
+  .Services__next {
     display: none;
   }
 }
 
 .header {
-  position: fixed;
   width: 100%;
   z-index: 9999;
 }
@@ -790,11 +812,10 @@ p {
 }
 
 .homeServices {
+  z-index: 999999999;
   margin-bottom: 2rem;
-  padding: 12rem 0 0 0;
 }
 .homeServices__wrapper {
-  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -848,20 +869,84 @@ p {
   z-index: 10;
 }
 
+.homeServices2 {
+  margin-bottom: 2rem;
+}
+.homeServices2 h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5215686275);
+  padding-bottom: 0.7rem;
+}
 .homeServices2__wrapper {
-  padding: 5rem 7rem;
-  background-color: pink;
+  padding: 6rem 7rem;
 }
 .homeServices2__slider {
+  margin-top: 2rem;
   display: flex;
-  background-color: red;
+}
+.homeServices2__slider p {
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.5rem;
+  font-size: 13px;
 }
 
-.homeServices2__wrapper {
-  padding: 5rem 7rem;
+.homeAbout {
+  margin-bottom: 2rem;
 }
-.homeServices2__slider {
-  display: flex;
+.homeAbout__wrapper {
+  padding: 6rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.homeAbout__wrapper h2,
+.homeAbout__wrapper small,
+.homeAbout__wrapper h5 {
+  border-bottom: 1px solid rgba(48, 48, 51, 0.2823529412);
+  padding-bottom: 1rem;
+  color: #3e3e43;
+}
+.homeAbout__wrapper small {
+  padding-top: 2rem;
+  font-size: 15px;
+}
+.homeAbout__wrapper h2 {
+  padding-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+.homeAbout__wrapper p {
+  color: #3e3e43;
+  font-size: 15px;
+}
+.homeAbout__what {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.homeAbout__what p {
+  padding-top: 1rem;
+}
+.homeAbout__why {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.homeAbout__why h5 {
+  color: #f8565d;
+}
+
+.rap {
+  margin-bottom: 2rem;
+}
+.rap__wrapper {
+  padding: 7rem 7rem 8.4rem 7rem;
+}
+.rap h4 {
+  margin-top: 3.7rem;
+}
+.rap i {
+  margin-left: 1.2rem;
+  font-size: 30px;
 }
 
 .aboutBanner {
@@ -1036,11 +1121,8 @@ p {
   gap: 2rem;
 }
 
-.blog {
-  padding-top: 10rem;
-}
 .blog__wrapper {
-  padding: 8rem 7rem;
+  padding: 6rem 7rem;
   background: #343438;
 }
 .blog__wrapper a {
@@ -1090,11 +1172,8 @@ p {
   margin-top: 3rem;
 }
 
-.contact {
-  padding-top: 10rem;
-}
 .contact__wrapper {
-  padding: 8rem 7rem;
+  padding: 6rem 7rem;
   background-color: #fcf9f1;
   display: flex;
   gap: 2rem;

@@ -2,9 +2,8 @@
 @use "../base/" as *;
 
 .contact {
-  padding-top: 10rem;
   &__wrapper {
-    padding: 8rem 7rem;
+    padding: 6rem 7rem;
     background-color: #fcf9f1;
     display: flex;
     gap: 2rem;
@@ -59,13 +58,13 @@
       &::placeholder {
         color: $clr--dark;
       }
-      &:focus{
-       border: none;
-       box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
-       &::placeholder{
-        color: #d9d9db;
-       }
-       transition: all 0.5s ease;
+      &:focus {
+        border: none;
+        box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+        &::placeholder {
+          color: #d9d9db;
+        }
+        transition: all 0.5s ease;
       }
     }
     textarea {
@@ -79,13 +78,13 @@
         color: $clr--dark;
         font-family: $font-primary;
       }
-      &:focus{
-       border: none;
-       box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
-       &::placeholder{
-        color: $clr--footer;
-       }
-       transition: all 0.5s ease;
+      &:focus {
+        border: none;
+        box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+        &::placeholder {
+          color: $clr--footer;
+        }
+        transition: all 0.5s ease;
       }
     }
   }
@@ -94,7 +93,7 @@
     display: flex;
     gap: 2rem;
     margin-left: 25rem;
-    input{
+    input {
       font-family: $font-secondary;
       font-size: 1.3rem;
     }

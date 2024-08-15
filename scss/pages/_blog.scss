@@ -2,9 +2,8 @@
 @use "../base/" as *;
 
 .blog {
-  padding-top: 10rem;
   &__wrapper {
-    padding: 8rem 7rem;
+    padding: 6rem 7rem;
     background: #343438;
     a {
       font-weight: normal;
@@ -20,9 +19,8 @@
       font-size: 40px;
       font-weight: normal;
     }
-    img{
+    img {
       object-fit: contain;
-
     }
   }
   &__details {

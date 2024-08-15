@@ -2,7 +2,6 @@
 @use "../base/" as *;
 
 .header {
-  position: fixed;
   width: 100%;
   z-index: 9999;
   &__wrapper {
@@ -30,7 +29,8 @@
         transition: all 0.3s ease;
       }
 
-      &:hover::after, &.active::after {
+      &:hover::after,
+      &.active::after {
         width: 100%;
       }
     }

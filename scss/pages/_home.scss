@@ -1,14 +1,10 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-@use "../abstract/" as *;
-@use "../base/" as *;
-
 .homeServices {
+  z-index: 999999999;
   margin-bottom: 2rem;
-  padding: 12rem 0 0 0;
   &__wrapper {
-    margin-top: 5rem;
     @include evengrid(4, 2rem);
     padding: 0 7rem;
   }
@@ -66,21 +62,77 @@
 }
 
 .homeServices2 {
+  margin-bottom: 2rem;
+  h2 {
+    border-bottom: 1px solid #ffffff85;
+    padding-bottom: 0.7rem;
+  }
   &__wrapper {
-    padding: 5rem 7rem;
-    background-color: pink;
+    padding: 6rem 7rem;
   }
   &__slider {
+    margin-top: 2rem;
     display: flex;
-    background-color: red;
+    p {
+      margin: 1.5rem 0 1rem 0;
+      line-height: 1.5rem;
+      font-size: 13px;
+    }
   }
 }
 
-.homeServices2 {
+.homeAbout {
+  margin-bottom: 2rem;
   &__wrapper {
-    padding: 5rem 7rem;
+    padding: 6rem 7rem;
+    @include evengrid(2, 2rem);
+    align-items: start;
+    h2,
+    small,
+    h5 {
+      border-bottom: 1px solid #30303348;
+      padding-bottom: 1rem;
+      color: $clr--primary;
+    }
+    small {
+      padding-top: 2rem;
+      font-size: 15px;
+    }
+    h2 {
+      padding-bottom: 0;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      color: $clr--primary;
+      font-size: 15px;
+    }
   }
-  &__slider {
-    display: flex;
+  &__what {
+    @include evengrid(1, 1rem);
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+  &__why {
+    @include evengrid(1, 1rem);
+    h5 {
+      color: $clr--secondary;
+    }
+  }
+}
+
+.rap {
+  margin-bottom: 2rem;
+  &__wrapper {
+    padding: 7rem 7rem 8.4rem 7rem;
+  }
+
+  h4 {
+    margin-top: 3.7rem;
+  }
+  i {
+    margin-left: 1.2rem;
+    font-size: 30px;
   }
 }
