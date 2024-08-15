@@ -6,36 +6,12 @@ var slider = tns({
   slideBy: "1",
   rewind: true,
 
-  //   navPosition: "top",
   containerControls: "#controls",
   prevButton: ".homeServices2__prev",
   nextButton: ".homeServices2__next",
   responsive: {
     1250: {
       items: 3,
-    },
-    200: {
-      items: 1,
-    },
-  },
-});
-
-var slider = tns({
-  container: ".homeBanner__slider",
-  items: 1,
-  autoheight: "true",
-  speed: 500,
-  slideBy: "1",
-  rewind: true,
-  gutter: 0,
-  axis: "vertical",
-  //   navPosition: "top",
-  containerControls: "#controls",
-  prevButton: ".homeServices2__prev",
-  nextButton: ".homeServices2__next",
-  responsive: {
-    1250: {
-      items: 1,
     },
     200: {
       items: 1,

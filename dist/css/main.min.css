@@ -25,7 +25,7 @@
   color: #3e3e43;
 }
 
-.bg--secondary {
+.bg--secondary, .btn.bg--rap {
   background-color: #f8565d;
 }
 
@@ -603,9 +603,15 @@ img {
 
 .container {
   width: 100%;
-  max-width: 98rem;
+  max-width: 97rem;
   margin: 0 auto;
   padding: 0 5rem;
+}
+
+h1 {
+  font-size: 122px;
+  font-weight: normal;
+  line-height: 6.85rem;
 }
 
 h2 {
@@ -623,20 +629,26 @@ h4 {
   font-weight: lighter;
 }
 
-p {
+h5 {
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+p, small {
   font-size: 14px;
   font-weight: lighter;
   font-family: "Ubuntu", Arial, sans-serif;
 }
 
-.btn, .btn.bg--slider, .btn.bg--secondary {
+.btn, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
   padding: 0.8rem 2rem;
 }
-.btn.bg--secondary {
+.btn.bg--secondary, .btn.bg--rap {
   background-color: #f8565d;
   color: #fff;
 }
-.btn.bg--secondary:hover {
+.btn.bg--secondary:hover, .btn.bg--rap:hover {
   background-color: #fff;
   color: #26252a;
   transition: 0.5s;
@@ -649,6 +661,10 @@ p {
   background-color: #f8565d;
   color: #fff;
   border: 1px solid #f8565d;
+}
+.btn.bg--rap {
+  padding: 1.5rem 2rem;
+  font-size: 20px;
 }
 
 .tns-outer {
@@ -665,9 +681,17 @@ p {
   display: none;
 }
 
-.tns-nav {
+.tns-visually-hidden {
   display: none;
+}
+
+.tns-nav {
+  position: absolute;
+  display: block;
   text-align: center;
+  z-index: 99;
+  right: 24rem;
+  top: 30rem;
 }
 .tns-nav button {
   margin: 2rem 0.5rem;
@@ -675,8 +699,24 @@ p {
   height: 1rem;
   border-radius: 50%;
   border: none;
+  background-color: red;
 }
 .tns-nav-active {
+  background-color: red;
+}
+
+.homeServices2 .tns-nav {
+  display: none;
+  text-align: center;
+}
+.homeServices2 .tns-nav button {
+  margin: 2rem 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+}
+.homeServices2 .tns-nav-active {
   background-color: #f8565d;
 }
 
@@ -691,8 +731,8 @@ p {
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 48rem;
-  left: 75.5rem;
+  bottom: 48.5rem;
+  left: 74.5rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
@@ -712,8 +752,33 @@ p {
   }
 }
 
+.homeServices2__prev, .homeServices2__next {
+  color: #f8565d;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1rem;
+  position: relative;
+  bottom: 3rem;
+  left: 69rem;
+  padding: 0.5rem 0.58rem;
+}
+@media screen and (max-width: 520px) {
+  .homeServices2__prev, .homeServices2__next {
+    display: none;
+  }
+}
+.homeServices2__prev:hover, .homeServices2__next:hover {
+  background-color: #26252a;
+  color: #f8565d;
+}
+
+@media screen and (max-width: 520px) {
+  .homeServices2__next {
+    display: none;
+  }
+}
+
 .header {
-  position: fixed;
   width: 100%;
   z-index: 9999;
 }
@@ -793,32 +858,47 @@ p {
 }
 
 .homeBanner {
-  padding-top: 10.35rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 .homeBanner__wrapper {
+  position: relative;
   margin: 0 auto;
-  max-height: 565.22px;
+  max-height: 558px;
 }
 .homeBanner__slider {
   display: flex;
   flex-direction: column;
 }
+.homeBanner__image:nth-child(2) img {
+  display: none;
+}
+.homeBanner__image:last-child img {
+  display: none;
+}
 .homeBanner__cars {
   position: relative;
 }
-.homeBanner__name {
+.homeBanner__display {
   position: absolute;
-  top: 40%;
+  display: flex;
+  z-index: 9999;
+  gap: 0.5rem;
+}
+.homeBanner__display a {
+  position: relative;
+  z-index: 9999;
+  background-color: #26252a;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  top: 23rem;
   left: 57rem;
 }
-.homeBanner__name h2 {
-  font-size: 56px;
-  line-height: 3.2rem;
+.homeBanner__display a:enabled {
+  background-color: #fff;
 }
 
 .homeServices {
-  z-index: 999999999;
   margin-bottom: 2rem;
 }
 .homeServices__wrapper {
@@ -1115,7 +1195,7 @@ p {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 72rem;
+  width: 71rem;
   top: -0.5rem;
   height: 1px;
   background-color: #89888c;

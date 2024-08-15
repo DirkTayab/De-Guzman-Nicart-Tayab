@@ -12,7 +12,29 @@
     display: none;
   }
 }
+.tns-visually-hidden {
+  display: none;
+}
 .tns-nav {
+  position: absolute;
+  display: block;
+  text-align: center;
+  z-index: 99;
+  right: 24rem;
+  top: 30rem;
+  button {
+    margin: 2rem 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+  }
+  &-active {
+    background-color: red;
+  }
+}
+.homeServices2 .tns-nav {
   display: none;
   text-align: center;
   button {
@@ -36,8 +58,8 @@
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 48rem;
-  left: 75.5rem;
+  bottom: 48.5rem;
+  left: 74.5rem;
   padding: 0.5rem 0.58rem;
   @include mediaQuery(520px) {
     display: none;
@@ -50,7 +72,30 @@
 }
 .Services__next {
   @extend .Services__prev;
-  @include mediaQuery(520px)  {
+  @include mediaQuery(520px) {
+    display: none;
+  }
+}
+.homeServices2__prev {
+  color: $clr--secondary;
+  border-radius: 50%;
+  background-color: $clr--light;
+  font-size: 1rem;
+  position: relative;
+  bottom: 3rem;
+  left: 69rem;
+  padding: 0.5rem 0.58rem;
+  @include mediaQuery(520px) {
+    display: none;
+  }
+  &:hover {
+    background-color: $clr--dark;
+    color: $clr--secondary;
+  }
+}
+.homeServices2__next {
+  @extend .homeServices2__prev;
+  @include mediaQuery(520px) {
     display: none;
   }
 }

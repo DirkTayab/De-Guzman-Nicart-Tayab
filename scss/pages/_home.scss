@@ -2,32 +2,58 @@
 @use "../base/" as *;
 
 .homeBanner {
-  padding-top: 10.35rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   &__wrapper {
+    position: relative;
     margin: 0 auto;
-    max-height: 565.22px;
+    max-height: 558px;
   }
-  &__slider{
+  &__slider {
     display: flex;
     flex-direction: column;
+  }
+  &__image {
+    &:nth-child(2) img{
+      display: none;
+    }
+    &:last-child img{
+      display: none;
+    }
   }
   &__cars {
     position: relative;
   }
-
-  &__name {
+  &__display {
     position: absolute;
-    top: 40%;
-    left: 57rem;
-    h2 {
-      font-size: 56px;
-      line-height: 3.2rem;
+    display: flex;
+    z-index: 9999;
+    gap: 0.5rem;
+    a {
+      position: relative;
+      z-index: 9999;
+      background-color: $clr--dark;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      top: 23rem;
+      left: 57rem;
+      &:enabled {
+        background-color: $clr--light;
+      }
     }
   }
 }
+// &__text1{
+//   opacity: 0%;
+// }
+// &__text2{
+//   opacity: 0%;
+// }
+// &__text3{
+//   opacity: 0%;
+// }
+
 .homeServices {
-  z-index: 999999999;
   margin-bottom: 2rem;
   &__wrapper {
     @include evengrid(4, 2rem);

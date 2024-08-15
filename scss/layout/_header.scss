@@ -2,7 +2,7 @@
 @use "../base/" as *;
 
 .header {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 9999;
   &__wrapper {
