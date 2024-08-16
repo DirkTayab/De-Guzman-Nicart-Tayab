@@ -635,7 +635,8 @@ h5 {
   font-family: "Ubuntu", Arial, sans-serif;
 }
 
-p, small {
+p,
+small {
   font-size: 14px;
   font-weight: lighter;
   font-family: "Ubuntu", Arial, sans-serif;
@@ -651,6 +652,7 @@ p, small {
 .btn.bg--secondary:hover, .btn.bg--rap:hover {
   background-color: #fff;
   color: #26252a;
+  transition: all 0.5s ease;
 }
 .btn.bg--slider {
   background-color: #fff;
@@ -673,23 +675,24 @@ p, small {
   display: none;
 }
 
-.tns-visually-hidden {
+.tns-inner {
+  overflow: hidden;
+}
+.tns-inner > button {
   display: none;
 }
 
-.homeServices2 .tns-nav {
-  display: none;
-  visibility: hidden;
+.tns-nav {
   text-align: center;
 }
-.homeServices2 .tns-nav button {
+.tns-nav button {
   margin: 2rem 0.5rem;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   border: none;
 }
-.homeServices2 .tns-nav-active {
+.tns-nav-active {
   background-color: #f8565d;
 }
 
@@ -697,28 +700,28 @@ p, small {
   position: absolute;
 }
 
-.homeServices2__prev, .homeServices2__next {
+.Services__prev, .Services__next {
   color: #f8565d;
   border-radius: 50%;
   background-color: #fff;
   font-size: 1rem;
   position: relative;
-  bottom: 3rem;
-  left: 69rem;
+  bottom: 48rem;
+  left: 75.5rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
-  .homeServices2__prev, .homeServices2__next {
+  .Services__prev, .Services__next {
     display: none;
   }
 }
-.homeServices2__prev:hover, .homeServices2__next:hover {
+.Services__prev:hover, .Services__next:hover {
   background-color: #26252a;
   color: #f8565d;
 }
 
 @media screen and (max-width: 520px) {
-  .homeServices2__next {
+  .Services__next {
     display: none;
   }
 }
@@ -861,6 +864,7 @@ p, small {
 }
 
 .homeServices {
+  z-index: 999999999;
   margin-bottom: 2rem;
 }
 .homeServices__wrapper {
@@ -925,7 +929,6 @@ p, small {
   padding-bottom: 0.7rem;
 }
 .homeServices2__wrapper {
-  position: relative;
   padding: 6rem 7rem;
 }
 .homeServices2__slider {
@@ -1170,73 +1173,76 @@ p, small {
   gap: 2rem;
 }
 
-.blog {
-  padding-top: 10rem;
-}
 .blog__wrapper {
-  padding: 7rem;
+  padding: 6rem 7rem;
   background: #343438;
+}
+.blog__wrapper a {
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 .blog__card {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   padding: 2rem 0;
-  border-bottom: 1px solid #89888c;
+  border-bottom: 1px solid #3e3e43;
 }
 .blog__card h3 {
   font-size: 40px;
   font-weight: normal;
 }
+.blog__card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .blog__details h4 {
-  font-size: h3;
+  line-height: 30px;
   font-weight: 500;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  transform: translateY(-0.5rem);
 }
 .blog__details p {
   font-family: "Ubuntu", Arial, sans-serif;
-  width: 90%;
-  margin-bottom: 2.5rem;
+  width: 80%;
+  margin-bottom: 2.65rem;
+  line-height: 1.5rem;
 }
-.blog__details a {
+.blog__title h2 {
   font-weight: normal;
-}
-.blog__title h3 {
-  font-size: 40px;
-  padding-bottom: 1rem;
-  font-weight: normal;
-  border-bottom: 1px solid #89888c;
-}
-.blog__date {
-  padding-left: 1rem;
+  border-bottom: 1px solid #3e3e43;
+  padding-bottom: 0.8rem;
 }
 .blog__date span {
   font-size: 83px;
 }
+.blog__date h3 {
+  margin-top: -2rem;
+}
+.blog__button {
+  margin-top: 3rem;
+}
 
-.contact {
-  padding-top: 10rem;
-}
 .contact__wrapper {
-  padding: 8rem;
+  padding: 6rem 7rem;
+  background-color: #fcf9f1;
   display: flex;
-  gap: 5rem;
-}
-.contact__find {
-  width: 40%;
+  gap: 2rem;
 }
 .contact__find h2 {
   color: #26252a;
-  border-bottom: 1px solid #89888c;
+  border-bottom: 1px solid #d9d9db;
   font-weight: normal;
 }
 .contact p {
   padding-top: 1rem;
   color: #26252a;
   font-family: "Ubuntu", Arial, sans-serif;
-  font-size: p;
+  font-size: 15px;
+  line-height: 1.7rem;
 }
 .contact__a {
-  border-bottom: 1px solid #89888c;
+  border-bottom: 1px solid #d9d9db;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
@@ -1247,12 +1253,13 @@ p, small {
 }
 .contact__a a:hover {
   color: #26252a;
+  transition: all 0.5s ease;
 }
 .contact__form h2 {
   font-size: h2;
   color: #26252a;
   font-weight: normal;
-  border-bottom: 1px solid #89888c;
+  border-bottom: 1px solid #d9d9db;
   padding-right: 23.4rem;
 }
 .contact__input {
@@ -1262,8 +1269,9 @@ p, small {
   gap: 1rem;
 }
 .contact__input input {
-  border: 1px solid #89888c;
-  width: 75%;
+  background-color: #fcf9f1;
+  border: 1px solid #d9d9db;
+  width: 488px;
   padding: 0.7rem;
 }
 .contact__input input::-moz-placeholder {
@@ -1275,19 +1283,21 @@ p, small {
 .contact__input input:focus {
   border: none;
   box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease;
 }
 .contact__input input:focus::-moz-placeholder {
-  color: #89888c;
+  color: #d9d9db;
 }
 .contact__input input:focus::placeholder {
-  color: #89888c;
+  color: #d9d9db;
 }
 .contact__input textarea {
   font-family: "Ubuntu", Arial, sans-serif;
+  background-color: #fcf9f1;
   padding: 0.7rem;
-  margin-bottom: 5rem;
-  border: 1px solid #89888c;
-  height: 20rem;
+  border: 1px solid #d9d9db;
+  height: 234px;
+  width: 670px;
 }
 .contact__input textarea::-moz-placeholder {
   color: #26252a;
@@ -1300,6 +1310,7 @@ p, small {
 .contact__input textarea:focus {
   border: none;
   box-shadow: rgba(185, 18, 18, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease;
 }
 .contact__input textarea:focus::-moz-placeholder {
   color: #89888c;
@@ -1308,5 +1319,12 @@ p, small {
   color: #89888c;
 }
 .contact__button {
-  text-align: right;
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  margin-left: 25rem;
+}
+.contact__button input {
+  font-family: "Ubuntu Condensed", Arial, sans-serif;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=main.min.css.map */

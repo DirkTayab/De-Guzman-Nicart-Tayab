@@ -35,6 +35,7 @@
 
 
 .homeServices {
+  z-index: 999999999;
   margin-bottom: 2rem;
   &__wrapper {
     @include evengrid(4, 2rem);
@@ -100,7 +101,6 @@
     padding-bottom: 0.7rem;
   }
   &__wrapper {
-    position: relative;
     padding: 6rem 7rem;
   }
   &__slider {

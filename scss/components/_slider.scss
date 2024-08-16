@@ -6,12 +6,14 @@
     display: none;
   }
 }
-.tns-visually-hidden {
-  display: none;
+.tns-inner {
+  overflow: hidden;
+  & > button {
+    display: none;
+  }
 }
-.homeServices2 .tns-nav {
-  display: none;
-  visibility: hidden;
+.tns-nav {
+  // display: none;
   text-align: center;
   button {
     margin: 2rem 0.5rem;
@@ -28,14 +30,14 @@
 #controls {
   position: absolute;
 }
-.homeServices2__prev {
+.Services__prev {
   color: $clr--secondary;
   border-radius: 50%;
   background-color: $clr--light;
   font-size: 1rem;
   position: relative;
-  bottom: 3rem;
-  left: 69rem;
+  bottom: 48rem;
+  left: 75.5rem;
   padding: 0.5rem 0.58rem;
   @include mediaQuery(520px) {
     display: none;
@@ -45,8 +47,8 @@
     color: $clr--secondary;
   }
 }
-.homeServices2__next {
-  @extend .homeServices2__prev;
+.Services__next {
+  @extend .Services__prev;
   @include mediaQuery(520px) {
     display: none;
   }
