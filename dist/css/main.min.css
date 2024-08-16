@@ -1156,8 +1156,7 @@ small {
   margin-bottom: 2.65rem;
   line-height: 1.5rem;
 }
-.blog__title h3 {
-  font-size: 40px;
+.blog__title h2 {
   font-weight: normal;
   border-bottom: 1px solid #3e3e43;
   padding-bottom: 0.8rem;
