@@ -845,23 +845,19 @@ p, small {
   position: relative;
   height: 540px;
 }
-.homeBanner h2 {
+.homeBanner__cars h2 {
   position: absolute;
   z-index: 999;
   top: 42%;
   left: 57rem;
+  opacity: 0;
   font-size: 56px;
   line-height: 3.2rem;
-  animation: mymove 1s linear;
-  animation-delay: 0.5s;
+  transition: all 3s ease;
+  transition-delay: 1s;
 }
-@keyframes mymove {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
+.homeBanner__cars.tns-slide-active h2 {
+  opacity: 1;
 }
 
 .homeServices {

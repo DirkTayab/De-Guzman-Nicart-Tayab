@@ -15,43 +15,24 @@
   &__cars {
     position: relative;
     height: 540px;
-  }
-  h2 {
-    position: absolute;
-    z-index: 999;
-    top: 42%;
-    left: 57rem;
-    font-size: 56px;
-    line-height: 3.2rem;
-    animation: mymove 1s linear;
-    animation-delay: 0.5s;
-  }
-  @keyframes mymove {
-    from{opacity: 0%}
-    to{opacity: 100%;}
-  }
-  }
 
-// .homeBanner {
-//   &__wrapper {
-//     position: relative;
-//     margin: 0 auto;
-//     max-height: 540px;
-//   }
-//   &__cars {
-//     height: 540px;
-//     // img {
-//     //   height: 40rem;
-//     // }
-//     h2 {
-//       font-size: 3rem;
-//       position: absolute;
-//       // margin-left: 68%;
-//       // margin-top: 15%;
-//       right: 0;
-//     }
-//   }
-// }
+    h2 {
+      position: absolute;
+      z-index: 999;
+      top: 42%;
+      left: 57rem;
+      opacity: 0;
+      font-size: 56px;
+      line-height: 3.2rem;
+      transition: all 3s ease;
+      transition-delay: 1s;
+    }
+    &.tns-slide-active h2 {
+      opacity: 1;
+    }
+  }
+}
+
 
 .homeServices {
   margin-bottom: 2rem;
