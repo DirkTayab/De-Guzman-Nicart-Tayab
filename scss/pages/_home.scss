@@ -1,6 +1,11 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.html,
+.body {
+  scroll-behavior: smooth;
+}
+
 .homeBanner {
   margin-bottom: 2rem;
   &__wrapper {

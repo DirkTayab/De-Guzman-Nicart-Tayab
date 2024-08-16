@@ -903,6 +903,11 @@ small {
   margin-left: 6.5rem;
 }
 
+.html,
+.body {
+  scroll-behavior: smooth;
+}
+
 .homeBanner {
   margin-bottom: 2rem;
 }
@@ -1078,7 +1083,6 @@ small {
 }
 
 .aboutBanner {
-  padding-top: 11.7rem;
   padding-bottom: 2rem;
 }
 .aboutBanner__title::after {
@@ -1234,7 +1238,6 @@ small {
 }
 
 .Services {
-  padding-top: 9.42rem;
   padding-bottom: 2rem;
 }
 .Services__wrapper {
@@ -1364,6 +1367,11 @@ small {
 }
 .top i {
   font-size: 0.8rem;
+}
+
+.html,
+.body {
+  scroll-behavior: smooth;
 }
 
 .blog__wrapper {

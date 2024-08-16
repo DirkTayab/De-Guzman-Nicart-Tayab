@@ -1,6 +1,11 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.html,
+.body {
+  scroll-behavior: smooth;
+}
+
 .blog {
   &__wrapper {
     padding: 6rem 7rem;
