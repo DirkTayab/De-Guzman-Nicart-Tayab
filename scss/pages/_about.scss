@@ -1,6 +1,11 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.html,
+.body {
+  scroll-behavior: smooth;
+}
+
 .aboutBanner {
   // background-color: $clr--dark;
   padding-top: 11.7rem;
@@ -139,5 +144,20 @@
         background-color: #89888c;
       }
     }
+  }
+}
+
+.top {
+  --offset: 50px;
+
+  position: sticky;
+  bottom: 50px;
+  left: 104rem;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  transition: 1s;
+  i {
+    font-size: 0.8rem;
   }
 }
