@@ -1,8 +1,40 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.homeBanner {
+  margin-bottom: 2rem;
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-height: 540px;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: column;
+  }
+  &__cars {
+    position: relative;
+    height: 540px;
+
+    h2 {
+      position: absolute;
+      z-index: 999;
+      top: 42%;
+      left: 57rem;
+      opacity: 0;
+      font-size: 56px;
+      line-height: 3.2rem;
+      transition: all 3s ease;
+      transition-delay: 1s;
+    }
+    &.tns-slide-active h2 {
+      opacity: 1;
+    }
+  }
+}
+
+
 .homeServices {
-  z-index: 999999999;
   margin-bottom: 2rem;
   &__wrapper {
     @include evengrid(4, 2rem);
@@ -68,6 +100,7 @@
     padding-bottom: 0.7rem;
   }
   &__wrapper {
+    position: relative;
     padding: 6rem 7rem;
   }
   &__slider {

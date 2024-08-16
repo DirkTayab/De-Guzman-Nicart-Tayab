@@ -642,7 +642,7 @@ small {
   font-family: "Ubuntu", Arial, sans-serif;
 }
 
-.btn, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
+.btn, .btn.top, .btn.top:hover, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
   padding: 0.8rem 2rem;
 }
 .btn.bg--secondary, .btn.bg--rap {
@@ -667,6 +667,99 @@ small {
   padding: 1.5rem 2rem;
   font-size: 20px;
 }
+.btn.top, .btn.top:hover {
+  font-size: 20px;
+  padding: 0.2rem 0.675rem 0.5rem 0.675rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.btn.top:hover {
+  background-color: #f8565d;
+  border: 1px solid #f8565d;
+}
+
+.tns-outer {
+  overflow: hidden;
+}
+.tns-outer > button {
+  display: none;
+}
+
+.tns-visually-hidden {
+  display: none;
+}
+
+.homeServices2 .tns-nav {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+}
+.homeServices2 .tns-nav button {
+  margin: 2rem 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+}
+.homeServices2 .tns-nav-active {
+  background-color: #f8565d;
+}
+
+#controls {
+  position: absolute;
+}
+
+.homeServices2__prev, .homeServices2__next {
+  color: #f8565d;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1rem;
+  position: relative;
+  bottom: 3rem;
+  left: 69rem;
+  padding: 0.5rem 0.58rem;
+}
+@media screen and (max-width: 520px) {
+  .homeServices2__prev, .homeServices2__next {
+    display: none;
+  }
+}
+.homeServices2__prev:hover, .homeServices2__next:hover {
+  background-color: #26252a;
+  color: #f8565d;
+}
+
+@media screen and (max-width: 520px) {
+  .homeServices2__next {
+    display: none;
+  }
+}
+
+.homeBanner .tns-outer {
+  overflow: hidden;
+}
+.homeBanner .tns-outer > button {
+  display: none;
+}
+.homeBanner .tns-nav {
+  position: absolute;
+  text-align: center;
+  z-index: 9999;
+  right: 26.4rem;
+  bottom: 8.3rem;
+}
+.homeBanner .tns-nav button {
+  margin: 2rem 0.2rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: none;
+}
+.homeBanner .tns-nav-active {
+  background-color: #26252a;
+}
 
 .tns-outer {
   overflow: hidden;
@@ -682,18 +775,17 @@ small {
   display: none;
 }
 
-.tns-nav {
+.tns-visually-hidden {
+  display: none;
+}
+
+.Services .tns-nav {
+  display: none;
+  position: absolute;
   text-align: center;
-}
-.tns-nav button {
-  margin: 2rem 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: none;
-}
-.tns-nav-active {
-  background-color: #f8565d;
+  z-index: 99;
+  right: 24rem;
+  top: 30rem;
 }
 
 #controls {
@@ -707,8 +799,8 @@ small {
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 48rem;
-  left: 75.5rem;
+  bottom: 44.5rem;
+  left: 75rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
@@ -746,7 +838,7 @@ small {
   color: #fff;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0 0.75rem 4.65rem 0.75rem;
+  padding: 0 0.73rem 4.65rem 0.73rem;
   position: relative;
 }
 .header__nav li a::after {
@@ -811,8 +903,38 @@ small {
   margin-left: 6.5rem;
 }
 
+.homeBanner {
+  margin-bottom: 2rem;
+}
+.homeBanner__wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-height: 540px;
+}
+.homeBanner__slider {
+  display: flex;
+  flex-direction: column;
+}
+.homeBanner__cars {
+  position: relative;
+  height: 540px;
+}
+.homeBanner__cars h2 {
+  position: absolute;
+  z-index: 999;
+  top: 42%;
+  left: 57rem;
+  opacity: 0;
+  font-size: 56px;
+  line-height: 3.2rem;
+  transition: all 3s ease;
+  transition-delay: 1s;
+}
+.homeBanner__cars.tns-slide-active h2 {
+  opacity: 1;
+}
+
 .homeServices {
-  z-index: 999999999;
   margin-bottom: 2rem;
 }
 .homeServices__wrapper {
@@ -877,6 +999,7 @@ small {
   padding-bottom: 0.7rem;
 }
 .homeServices2__wrapper {
+  position: relative;
   padding: 6rem 7rem;
 }
 .homeServices2__slider {
@@ -949,28 +1072,31 @@ small {
   font-size: 30px;
 }
 
+.html,
+.body {
+  scroll-behavior: smooth;
+}
+
 .aboutBanner {
-  padding-top: 8rem;
+  padding-top: 11.7rem;
   padding-bottom: 2rem;
 }
 .aboutBanner__title::after {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 65rem;
+  width: 73rem;
   height: 1px;
   background-color: #89888c;
 }
 .aboutBanner__title h2 {
-  font-size: 40px;
-  font-family: "Ubuntu", Arial, sans-serif;
   font-weight: 200;
 }
 .aboutBanner__wrapper {
   display: flex;
   flex-direction: column;
   background-color: #3e3e43;
-  padding: 5rem;
+  padding: 6rem 7rem;
   gap: 3rem;
 }
 .aboutBanner__wrapper h3 {
@@ -1001,7 +1127,7 @@ small {
   padding-bottom: 2rem;
 }
 .aboutHistory__wrapper {
-  padding: 5rem;
+  padding: 6rem 7rem;
   background-color: #f8565d;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1022,8 +1148,8 @@ small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 49rem;
-  top: -1rem;
+  width: 50rem;
+  top: -2.25rem;
   height: 0.1rem;
   background-color: #89888c;
 }
@@ -1035,32 +1161,44 @@ small {
   position: relative;
   content: " ";
   width: 23rem;
-  top: -1rem;
+  top: -2.25rem;
   height: 0.1rem;
   background-color: #89888c;
+}
+.aboutHistory__opportunities a:hover {
+  color: #26252a;
+  transition: 0.5s;
 }
 
 .aboutTeam {
   padding-bottom: 2rem;
 }
-.aboutTeam span {
+.aboutTeam a {
   color: #f8565d;
   font-size: 13px;
+}
+.aboutTeam a:hover {
+  transition: 0.5s;
+  color: #26252a;
 }
 .aboutTeam p {
   color: #26252a;
 }
-.aboutTeam p a {
-  color: #26252a;
-}
 .aboutTeam__wrapper {
   background-color: #fff;
-  padding: 5rem;
+  padding: 6rem 7rem;
 }
-.aboutTeam__content {
+.aboutTeam__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+.aboutTeam__content a {
+  color: #26252a;
+}
+.aboutTeam__content a:hover {
+  color: #f8565d;
+  transition: 0.5s;
 }
 .aboutTeam__title h2 {
   font-family: "Ubuntu Condensed", Arial, sans-serif;
@@ -1070,10 +1208,29 @@ small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 75.15rem;
-  top: -1.5rem;
+  width: 73rem;
+  top: -2.25rem;
   height: 1px;
   background-color: #89888c;
+}
+
+.top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 50px;
+  left: 104rem;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  transition: 1s;
+}
+.top i {
+  font-size: 0.8rem;
+}
+
+.html,
+.body {
+  scroll-behavior: smooth;
 }
 
 .Services {
@@ -1083,7 +1240,13 @@ small {
 .Services__wrapper {
   background-color: #3e3e43;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 6rem 7rem;
+}
+.Services__card .tns-item {
+  padding-right: 2rem;
+}
+.Services__top {
+  padding-bottom: 2rem;
 }
 .Services__slider {
   display: flex;
@@ -1093,7 +1256,7 @@ small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 75rem;
+  width: 73rem;
   top: -0.5rem;
   height: 1px;
   background-color: #89888c;
@@ -1106,19 +1269,101 @@ small {
   font-weight: 200;
   color: #26252a;
 }
-.Price a {
+.Price__left h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -2rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__left a {
   font-size: 13px;
   color: #f8565d;
+  display: block;
+  line-height: 1rem;
+}
+.Price__left a::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 23rem;
+  top: -0.5rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__right h2::after {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  width: 49.5rem;
+  top: -2rem;
+  height: 1px;
+  background-color: #89888c;
+}
+.Price__right a {
+  font-size: 13px;
+  color: #26252a;
+  display: block;
+  line-height: 1rem;
+}
+.Price__right a:hover {
+  color: #f8565d;
+}
+.Price__right p {
+  width: 50rem;
 }
 .Price p {
+  font-size: 15px;
   color: #26252a;
 }
 .Price__wrapper {
-  padding: 5rem;
+  padding: 6rem 7rem;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
+}
+.Price__lists {
+  margin-right: 5rem;
+  display: flex;
+  gap: 5rem;
+  color: #26252a;
+}
+.Price__lists em {
+  background: url(/img/ellipsis.png) repeat-x 0% 13px;
+  display: block;
+  overflow: hidden;
+}
+.Price__lists a {
+  font-size: 15px;
+  width: 12.8rem;
+  float: left;
+  font-family: #f8565d;
+}
+.Price__lists a:hover {
+  color: #f8565d;
+}
+.Price__col {
+  margin-top: 1rem;
+}
+.Price__col ul li {
+  padding-bottom: 1.5rem;
+}
+
+.top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 50px;
+  left: 104rem;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  transition: 1s;
+}
+.top i {
+  font-size: 0.8rem;
 }
 
 .blog__wrapper {
