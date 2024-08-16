@@ -641,7 +641,7 @@ p, small {
   font-family: "Ubuntu", Arial, sans-serif;
 }
 
-.btn, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
+.btn, .btn.top, .btn.top:hover, .btn.bg--slider, .btn.bg--secondary, .btn.bg--rap {
   padding: 0.8rem 2rem;
 }
 .btn.bg--secondary, .btn.bg--rap {
@@ -666,6 +666,18 @@ p, small {
   padding: 1.5rem 2rem;
   font-size: 20px;
 }
+.btn.top, .btn.top:hover {
+  font-size: 20px;
+  padding: 0.2rem 0.675rem 0.5rem 0.675rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.btn.top:hover {
+  background-color: #f8565d;
+  border: 1px solid #f8565d;
+}
 
 .tns-outer {
   overflow: hidden;
@@ -685,24 +697,13 @@ p, small {
   display: none;
 }
 
-.tns-nav {
+.Services .tns-nav {
+  display: none;
   position: absolute;
-  display: block;
   text-align: center;
   z-index: 99;
   right: 24rem;
   top: 30rem;
-}
-.tns-nav button {
-  margin: 2rem 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: none;
-  background-color: red;
-}
-.tns-nav-active {
-  background-color: red;
 }
 
 .homeServices2 .tns-nav {
@@ -731,8 +732,8 @@ p, small {
   border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
-  bottom: 48.5rem;
-  left: 74.5rem;
+  bottom: 44.5rem;
+  left: 75rem;
   padding: 0.5rem 0.58rem;
 }
 @media screen and (max-width: 520px) {
@@ -1043,7 +1044,7 @@ p, small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 78rem;
+  width: 73rem;
   height: 1px;
   background-color: #89888c;
 }
@@ -1054,7 +1055,7 @@ p, small {
   display: flex;
   flex-direction: column;
   background-color: #3e3e43;
-  padding: 5rem;
+  padding: 6rem 7rem;
   gap: 3rem;
 }
 .aboutBanner__wrapper h3 {
@@ -1085,7 +1086,7 @@ p, small {
   padding-bottom: 2rem;
 }
 .aboutHistory__wrapper {
-  padding: 5rem;
+  padding: 6rem 7rem;
   background-color: #f8565d;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1118,7 +1119,7 @@ p, small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 25rem;
+  width: 23rem;
   top: -2.25rem;
   height: 0.1rem;
   background-color: #89888c;
@@ -1144,7 +1145,7 @@ p, small {
 }
 .aboutTeam__wrapper {
   background-color: #fff;
-  padding: 5rem;
+  padding: 6rem 7rem;
 }
 .aboutTeam__cards {
   display: grid;
@@ -1166,10 +1167,15 @@ p, small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 78rem;
+  width: 73rem;
   top: -2.25rem;
   height: 1px;
   background-color: #89888c;
+}
+
+.html,
+.body {
+  scroll-behavior: smooth;
 }
 
 .Services {
@@ -1179,7 +1185,7 @@ p, small {
 .Services__wrapper {
   background-color: #3e3e43;
   margin: 0 auto;
-  padding: 8rem;
+  padding: 6rem 7rem;
 }
 .Services__card .tns-item {
   padding-right: 2rem;
@@ -1195,7 +1201,7 @@ p, small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 71rem;
+  width: 73rem;
   top: -0.5rem;
   height: 1px;
   background-color: #89888c;
@@ -1254,10 +1260,11 @@ p, small {
   width: 50rem;
 }
 .Price p {
+  font-size: 15px;
   color: #26252a;
 }
 .Price__wrapper {
-  padding: 5rem;
+  padding: 6rem 7rem;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -1275,6 +1282,7 @@ p, small {
   overflow: hidden;
 }
 .Price__lists a {
+  font-size: 15px;
   width: 12.8rem;
   float: left;
   font-family: #f8565d;
@@ -1287,6 +1295,20 @@ p, small {
 }
 .Price__col ul li {
   padding-bottom: 1.5rem;
+}
+
+.top {
+  --offset: 50px;
+  position: sticky;
+  bottom: 50px;
+  left: 104rem;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  transition: 1s;
+}
+.top i {
+  font-size: 0.8rem;
 }
 
 .blog {

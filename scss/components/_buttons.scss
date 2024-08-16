@@ -28,5 +28,18 @@
     padding: 1.5rem 2rem;
     font-size: 20px;
   }
-
+  &.top {
+    @extend .btn;
+    font-size: 20px;
+    padding: 0.2rem 0.675rem 0.5rem 0.675rem;
+    color: $clr--light;
+    border: 1px solid $clr--light;
+    border-radius: 50%;
+    background-color: transparent;
+    &:hover {
+      @extend .top;
+      background-color: $clr--secondary;
+      border: 1px solid $clr--secondary;
+    }
+  }
 }
