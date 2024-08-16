@@ -1,0 +1,82 @@
+@use "../abstract/" as *;
+
+.tns-outer {
+  overflow: hidden;
+  & > button {
+    display: none;
+  }
+}
+.tns-visually-hidden {
+  display: none;
+}
+.homeServices2 .tns-nav {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  button {
+    margin: 2rem 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+  }
+  &-active {
+    background-color: $clr--secondary;
+  }
+}
+
+#controls {
+  position: absolute;
+}
+.homeServices2__prev {
+  color: $clr--secondary;
+  border-radius: 50%;
+  background-color: $clr--light;
+  font-size: 1rem;
+  position: relative;
+  bottom: 3rem;
+  left: 69rem;
+  padding: 0.5rem 0.58rem;
+  @include mediaQuery(520px) {
+    display: none;
+  }
+  &:hover {
+    background-color: $clr--dark;
+    color: $clr--secondary;
+  }
+}
+.homeServices2__next {
+  @extend .homeServices2__prev;
+  @include mediaQuery(520px) {
+    display: none;
+  }
+}
+.homeBanner {
+  .tns-outer {
+    overflow: hidden;
+    & > button {
+      display: none;
+    }
+  }
+  // .tns-visually-hidden {
+  //   display: none;
+  // }
+  .tns-nav {
+    // display: block;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+    right: 26.4rem;
+    bottom: 8.3rem;
+    button {
+      margin: 2rem 0.2rem;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      border: none;
+    }
+    &-active {
+      background-color: $clr--dark;
+    }
+  }
+}

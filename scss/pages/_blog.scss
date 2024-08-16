@@ -2,48 +2,58 @@
 @use "../base/" as *;
 
 .blog {
-  padding-top: 10rem;
   &__wrapper {
-    padding: 7rem;
+    padding: 6rem 7rem;
     background: #343438;
+    a {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
   }
   &__card {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     padding: 2rem 0;
-    border-bottom: 1px solid $clr--footer;
+    border-bottom: 1px solid $clr--primary;
     h3 {
       font-size: 40px;
       font-weight: normal;
+    }
+    img {
+      object-fit: contain;
     }
   }
   &__details {
     h4 {
-      font-size: h3;
+      line-height: 30px;
       font-weight: 500;
       margin-bottom: 1rem;
+      text-transform: uppercase;
+      transform: translateY(-0.5rem);
     }
     p {
       font-family: $font-primary;
-      width: 90%;
-      margin-bottom: 2.5rem;
-    }
-    a{
-        font-weight: normal;
+      width: 80%;
+      margin-bottom: 2.65rem;
+      line-height: 1.5rem;
     }
   }
   &__title {
-    h3 {
-      font-size: 40px;
-      padding-bottom: 1rem;
+    h2 {
       font-weight: normal;
-      border-bottom: 1px solid $clr--footer;
+      border-bottom: 1px solid $clr--primary;
+      padding-bottom: 0.8rem;
     }
   }
   &__date {
-    padding-left: 1rem;
     span {
       font-size: 83px;
     }
+    h3 {
+      margin-top: -2rem;
+    }
+  }
+  &__button {
+    margin-top: 3rem;
   }
 }

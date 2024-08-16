@@ -2,7 +2,6 @@
 @use "../base/" as *;
 
 .header {
-  // position: fixed;
   width: 100%;
   z-index: 9999;
   &__wrapper {
@@ -10,25 +9,29 @@
   }
   &__nav {
     display: flex;
-    margin-right: 9rem;
-    gap: 0.2rem;
+    margin-right: 8rem;
+    gap: 0.25rem;
     li a {
       color: $clr--light;
       font-weight: 500;
       font-size: 1.2rem;
-      padding: 0 0.75rem 4.65rem 0.75rem;
+      padding: 0 0.73rem 4.65rem 0.73rem;
       position: relative;
-      // &:hover, &:active {
-      //   border-bottom: 10px solid $clr--secondary;
-      // }
-      &:after {
+
+      &::after {
         position: absolute;
-        content: " ";
-        bottom: 0;
-        width: 100%;
+        content: "";
+        bottom: -0.6rem;
+        width: 0;
         height: 10px;
-        color: $clr--primary;
-        left: -100;
+        background-color: $clr--secondary;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
       }
     }
   }
