@@ -1,4 +1,4 @@
-var slider1 = tns({
+var bannerslider1 = tns({
   container: ".homeBanner__slider",
   items: 1,
   autoheight: "true",
@@ -23,7 +23,7 @@ var slider1 = tns({
   },
 });
 
-var slider2 = tns({
+var homeserviceslider2 = tns({
   container: ".homeServices2__slider",
   items: 3,
   speed: 500,
