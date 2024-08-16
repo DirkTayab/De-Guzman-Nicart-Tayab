@@ -16,6 +16,19 @@
     .tns-item {
       padding-right: 2rem;
     }
+    a {
+      color: $clr--secondary;
+      &:hover {
+        color: $clr--dark;
+      }
+    }
+    p a {
+      color: $clr--light;
+      text-decoration: underline;
+      &:hover {
+        color: $clr--secondary;
+      }
+    }
   }
   &__top {
     padding-bottom: 2rem;
@@ -31,6 +44,7 @@
       position: relative;
       content: " ";
       width: 73rem;
+      opacity: 0.3;
       top: -0.5rem;
       height: 1px;
       background-color: #89888c;
@@ -51,12 +65,15 @@
       content: " ";
       width: 23rem;
       top: -2rem;
+      opacity: 0.3;
       height: 1px;
       background-color: #89888c;
     }
     a {
+      padding-bottom: 1.5rem;
       font-size: 13px;
       color: $clr--secondary;
+      font-family: $font-primary;
       display: block;
       line-height: 1rem;
       &::after {
@@ -64,9 +81,14 @@
         position: relative;
         content: " ";
         width: 23rem;
-        top: -0.5rem;
+        top: 0.7rem;
         height: 1px;
+        opacity: 0.3;
         background-color: #89888c;
+      }
+
+      &:hover {
+        color: $clr--dark;
       }
     }
   }
@@ -78,11 +100,14 @@
       width: 49.5rem;
       top: -2rem;
       height: 1px;
+      opacity: 0.3;
       background-color: #89888c;
     }
     a {
+      margin-top: 0.8rem;
       font-size: 13px;
       color: $clr--dark;
+      font-family: $font-primary;
       display: block;
       line-height: 1rem;
       &:hover {
@@ -91,6 +116,7 @@
     }
     p {
       width: 50rem;
+      text-align: justify;
     }
   }
 

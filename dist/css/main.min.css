@@ -748,7 +748,7 @@ small {
   text-align: center;
   z-index: 9999;
   right: 26.4rem;
-  bottom: 8.3rem;
+  bottom: 9.3rem;
 }
 .homeBanner .tns-nav button {
   margin: 2rem 0.2rem;
@@ -855,9 +855,6 @@ small {
   width: 100%;
 }
 
-.footer {
-  padding: 1.5rem 0;
-}
 .footer p {
   color: #89888c;
   font-family: "Ubuntu", Arial, sans-serif;
@@ -914,7 +911,7 @@ small {
 .homeBanner__wrapper {
   position: relative;
   margin: 0 auto;
-  max-height: 540px;
+  max-height: 559px;
 }
 .homeBanner__slider {
   display: flex;
@@ -922,18 +919,18 @@ small {
 }
 .homeBanner__cars {
   position: relative;
-  height: 540px;
+  height: 559px;
 }
 .homeBanner__cars h2 {
   position: absolute;
   z-index: 999;
-  top: 42%;
+  top: 41%;
   left: 57rem;
   opacity: 0;
   font-size: 56px;
   line-height: 3.2rem;
   transition: all 3s ease;
-  transition-delay: 1s;
+  transition-delay: 0.8s;
 }
 .homeBanner__cars.tns-slide-active h2 {
   opacity: 1;
@@ -1091,6 +1088,7 @@ small {
   content: " ";
   width: 73rem;
   height: 1px;
+  opacity: 0.3;
   background-color: #89888c;
 }
 .aboutBanner__title h2 {
@@ -1130,6 +1128,9 @@ small {
 .aboutHistory {
   padding-bottom: 2rem;
 }
+.aboutHistory p {
+  line-height: 1.6rem;
+}
 .aboutHistory__wrapper {
   padding: 6rem 7rem;
   background-color: #f8565d;
@@ -1145,6 +1146,9 @@ small {
   font-size: 14px;
   color: #fca8ac;
 }
+.aboutHistory__history {
+  max-width: 47rem;
+}
 .aboutHistory__history h2 {
   font-family: "Ubuntu Condensed", Arial, sans-serif;
 }
@@ -1152,10 +1156,11 @@ small {
   display: inline-block;
   position: relative;
   content: " ";
-  width: 50rem;
+  width: 47rem;
   top: -2.25rem;
+  opacity: 0.3;
   height: 0.1rem;
-  background-color: #89888c;
+  background-color: #fff;
 }
 .aboutHistory__opportunities h2 {
   font-family: "Ubuntu Condensed", Arial, sans-serif;
@@ -1165,9 +1170,13 @@ small {
   position: relative;
   content: " ";
   width: 23rem;
+  opacity: 0.3;
   top: -2.25rem;
   height: 0.1rem;
-  background-color: #89888c;
+  background-color: #fff;
+}
+.aboutHistory__opportunities a {
+  font-family: "Ubuntu", Arial, sans-serif;
 }
 .aboutHistory__opportunities a:hover {
   color: #26252a;
@@ -1178,12 +1187,23 @@ small {
   padding-bottom: 2rem;
 }
 .aboutTeam a {
+  font-family: "Ubuntu", Arial, sans-serif;
   color: #f8565d;
   font-size: 13px;
 }
 .aboutTeam a:hover {
   transition: 0.5s;
   color: #26252a;
+}
+.aboutTeam p a {
+  font-family: "Ubuntu", Arial, sans-serif;
+  color: #26252a;
+  font-size: 13px;
+  text-decoration: underline;
+}
+.aboutTeam p a:hover {
+  transition: 0.5s;
+  color: #f8565d;
 }
 .aboutTeam p {
   color: #26252a;
@@ -1212,6 +1232,7 @@ small {
   display: inline-block;
   position: relative;
   content: " ";
+  opacity: 0.3;
   width: 73rem;
   top: -2.25rem;
   height: 1px;
@@ -1248,6 +1269,19 @@ small {
 .Services__card .tns-item {
   padding-right: 2rem;
 }
+.Services__card a {
+  color: #f8565d;
+}
+.Services__card a:hover {
+  color: #26252a;
+}
+.Services__card p a {
+  color: #fff;
+  text-decoration: underline;
+}
+.Services__card p a:hover {
+  color: #f8565d;
+}
 .Services__top {
   padding-bottom: 2rem;
 }
@@ -1260,6 +1294,7 @@ small {
   position: relative;
   content: " ";
   width: 73rem;
+  opacity: 0.3;
   top: -0.5rem;
   height: 1px;
   background-color: #89888c;
@@ -1278,12 +1313,15 @@ small {
   content: " ";
   width: 23rem;
   top: -2rem;
+  opacity: 0.3;
   height: 1px;
   background-color: #89888c;
 }
 .Price__left a {
+  padding-bottom: 1.5rem;
   font-size: 13px;
   color: #f8565d;
+  font-family: "Ubuntu", Arial, sans-serif;
   display: block;
   line-height: 1rem;
 }
@@ -1292,9 +1330,13 @@ small {
   position: relative;
   content: " ";
   width: 23rem;
-  top: -0.5rem;
+  top: 0.7rem;
   height: 1px;
+  opacity: 0.3;
   background-color: #89888c;
+}
+.Price__left a:hover {
+  color: #26252a;
 }
 .Price__right h2::after {
   display: inline-block;
@@ -1303,11 +1345,14 @@ small {
   width: 49.5rem;
   top: -2rem;
   height: 1px;
+  opacity: 0.3;
   background-color: #89888c;
 }
 .Price__right a {
+  margin-top: 0.8rem;
   font-size: 13px;
   color: #26252a;
+  font-family: "Ubuntu", Arial, sans-serif;
   display: block;
   line-height: 1rem;
 }
@@ -1316,6 +1361,7 @@ small {
 }
 .Price__right p {
   width: 50rem;
+  text-align: justify;
 }
 .Price p {
   font-size: 15px;
@@ -1374,6 +1420,9 @@ small {
   scroll-behavior: smooth;
 }
 
+.blog {
+  margin-bottom: 2rem;
+}
 .blog__wrapper {
   padding: 6rem 7rem;
   background: #343438;
@@ -1424,6 +1473,9 @@ small {
   margin-top: 3rem;
 }
 
+.contact {
+  margin-bottom: 2rem;
+}
 .contact__wrapper {
   padding: 6rem 7rem;
   background-color: #fcf9f1;

@@ -11,7 +11,7 @@
   &__wrapper {
     position: relative;
     margin: 0 auto;
-    max-height: 540px;
+    max-height: 559px;
   }
   &__slider {
     display: flex;
@@ -19,18 +19,18 @@
   }
   &__cars {
     position: relative;
-    height: 540px;
+    height: 559px;
 
     h2 {
       position: absolute;
       z-index: 999;
-      top: 42%;
+      top: 41%;
       left: 57rem;
       opacity: 0;
       font-size: 56px;
       line-height: 3.2rem;
       transition: all 3s ease;
-      transition-delay: 1s;
+      transition-delay: 0.8s;
     }
     &.tns-slide-active h2 {
       opacity: 1;
