@@ -1,4 +1,3 @@
-
 @use "../abstract/" as *;
 @use "../base/" as *;
 
@@ -31,19 +30,18 @@
       &:hover {
         background-color: $clr--secondary;
         border: 2px solid $clr--secondary;
-        transition: all 0.5s ease;
       }
     }
   }
   &__location {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   &__socials {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 6.5rem;
   }
 }

@@ -704,7 +704,6 @@ small {
   color: #f8565d;
   border-radius: 50%;
   background-color: #fff;
-  border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
   bottom: 48rem;
@@ -717,15 +716,38 @@ small {
   }
 }
 .Services__prev:hover, .Services__next:hover {
-  background-color: #f8565d;
-  color: #fff;
-  border: 1px solid #f8565d;
+  background-color: #26252a;
+  color: #f8565d;
 }
 
 @media screen and (max-width: 520px) {
   .Services__next {
     display: none;
   }
+}
+
+.homeBanner .tns-outer {
+  overflow: hidden;
+}
+.homeBanner .tns-outer > button {
+  display: none;
+}
+.homeBanner .tns-nav {
+  position: absolute;
+  text-align: center;
+  z-index: 9999;
+  right: 26.4rem;
+  bottom: 8.3rem;
+}
+.homeBanner .tns-nav button {
+  margin: 2rem 0.2rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: none;
+}
+.homeBanner .tns-nav-active {
+  background-color: #26252a;
 }
 
 .header {
@@ -746,7 +768,7 @@ small {
   color: #fff;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0 0.75rem 4.65rem 0.75rem;
+  padding: 0 0.73rem 4.65rem 0.73rem;
   position: relative;
 }
 .header__nav li a::after {
@@ -797,18 +819,52 @@ small {
 .footer__social i:hover {
   background-color: #f8565d;
   border: 2px solid #f8565d;
-  transition: all 0.5s ease;
 }
 .footer__location {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .footer__socials {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 6.5rem;
+}
+
+.homeBanner {
+  margin-bottom: 2rem;
+}
+.homeBanner__wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-height: 540px;
+}
+.homeBanner__slider {
+  display: flex;
+  flex-direction: column;
+}
+.homeBanner__cars {
+  position: relative;
+  height: 540px;
+}
+.homeBanner h2 {
+  position: absolute;
+  z-index: 999;
+  top: 42%;
+  left: 57rem;
+  font-size: 56px;
+  line-height: 3.2rem;
+  animation: mymove 1s linear;
+  animation-delay: 0.5s;
+}
+@keyframes mymove {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .homeServices {

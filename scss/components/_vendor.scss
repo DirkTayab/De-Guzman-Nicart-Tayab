@@ -34,7 +34,6 @@
   color: $clr--secondary;
   border-radius: 50%;
   background-color: $clr--light;
-  border: 1px solid transparent;
   font-size: 1rem;
   position: relative;
   bottom: 48rem;
@@ -44,14 +43,42 @@
     display: none;
   }
   &:hover {
-    background-color: $clr--secondary;
-    color: $clr--light;
-    border: 1px solid $clr--secondary;
+    background-color: $clr--dark;
+    color: $clr--secondary;
   }
 }
 .Services__next {
   @extend .Services__prev;
   @include mediaQuery(520px) {
     display: none;
+  }
+}
+.homeBanner {
+  .tns-outer {
+    overflow: hidden;
+    & > button {
+      display: none;
+    }
+  }
+  // .tns-visually-hidden {
+  //   display: none;
+  // }
+  .tns-nav {
+    // display: block;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+    right: 26.4rem;
+    bottom: 8.3rem;
+    button {
+      margin: 2rem 0.2rem;
+      width: .9rem;
+      height: .9rem;
+      border-radius: 50%;
+      border: none;
+    }
+    &-active {
+      background-color: $clr--dark;
+    }
   }
 }
